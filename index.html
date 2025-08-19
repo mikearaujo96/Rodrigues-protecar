@@ -26,6 +26,7 @@
     <!-- CSS e JS -->
     <link rel="stylesheet" href="css/index.css">
     <script src="js/transicaoNav.js" defer></script>
+    <script src="js/verificacaoDisponibilidade.js" defer></script>
     <title>Rodrigues Trava Protecar</title>
 </head>
 
@@ -70,7 +71,8 @@
 
                 <div class="links-redes-sociais">
                     <a href="#">
-                        <img id="icone-facebook" src="assets/icones/icon-facebook-claro.svg" alt="Icone facebook: Rodrigues Trava Protecar">
+                        <img id="icone-facebook" src="assets/icones/icon-facebook-claro.svg"
+                            alt="Icone facebook: Rodrigues Trava Protecar">
                     </a>
                     <a href="#">
                         <img id="icone-instagram" src="assets/icones/icon-instagram-claro.svg"
@@ -115,32 +117,50 @@
             </div>
 
             <div class="inputs-busca-por-servicos">
+
                 <div class="selecione-tipo-veiculo">
                     <label for="">Tipo do veículo</label>
-                    <div class="input">
+                    <div id="abrir-tipo-veiculos" class="input">
                         <img src="assets/icones/icon-carro.svg" alt="icone: carro">
-                        <input type="text" placeholder="Tipo de veiculo" disabled>
+                        <input type="text" id="input-veri-1" placeholder="Tipo de veiculo" readonly>
                         <img src="assets/icones/icon-seta2.svg" alt="icone: seta">
+                    </div>
+                    <div class="opcoes-tipo-veiculo">
+                        <ul>
+                            <li>Carro</li>
+                            <li>Utilitario</li>
+                            <li>Caminhão</li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="selecione-ano-veiculo">
                     <label for="">Ano do veículo</label>
-                    <div class="input">
+                    <div id="abrir-ano-veiculos" class="input">
                         <img src="assets/icones/icone-calendario.svg" alt="icone: calendario">
-                        <input type="number" id="ano" name="ano" min="2000" max="2025" placeholder="2025" disabled>
+                        <input type="number" id="input-veri-2" name="ano" min="2000" max="2025" placeholder="AAAA"
+                            readonly>
+                        <img src="assets/icones/icon-seta2.svg" alt="icone: seta">
                     </div>
+                    <div class="opcoes-ano-veiculo">
+                        <ul id="lista-de-anos-veiculos">
+                        </ul>
+                    </div>
+
                 </div>
 
                 <div class="selecione-cep-proprietario">
                     <label for="">CEP</label>
                     <div class="input">
                         <img src="assets/icones/icone-cep.svg" alt="icone: cep">
-                        <input type="text" placeholder="Digite seu CEP" disabled>
+                        <input data-mask="cep" placeholder="00000-000" inputmode="numeric" maxlength="9" />
                     </div>
                 </div>
+
                 <div class="botao-pesquisar">
-                    <button><img src="assets/icones/icone=pesquisar.svg" alt="icone: pesquisar"></button>
+                    <button class="campo-botao">
+                        <img src="assets/icones/icone=pesquisar.svg" alt="icone: pesquisar">
+                    </button>
                 </div>
             </div>
         </section>

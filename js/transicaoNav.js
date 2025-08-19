@@ -16,7 +16,7 @@ window.addEventListener('scroll', () => {
         iconeInstagram.src = 'assets/icones/icon-instagram-escuro.svg'
         itensMenu.forEach(i => {
             i.style.color = 'var(--color-5)'
-            i.style.fontWeight = '400'
+            i.style.fontWeight = '500'
         })
 
     } else if (scrollTela < 500) {
