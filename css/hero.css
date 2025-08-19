@@ -221,6 +221,7 @@
                     width: 100%;
                     text-align: center;
                     cursor: pointer;
+                    color: #fff;
                 }
 
                 & input[type="number"]::-webkit-inner-spin-button,
@@ -376,6 +377,8 @@
 
         & .selecione-cep-proprietario {
             width: 220px;
+
+
         }
 
         & .botao-pesquisar {

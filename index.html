@@ -122,7 +122,7 @@
                     <label for="">Tipo do veículo</label>
                     <div id="abrir-tipo-veiculos" class="input">
                         <img src="assets/icones/icon-carro.svg" alt="icone: carro">
-                        <input type="text" id="input-veri-1" placeholder="Tipo de veiculo" readonly>
+                        <input type="text" id="input-veri-1" placeholder="Tipo de veiculo" value="" readonly>
                         <img src="assets/icones/icon-seta2.svg" alt="icone: seta">
                     </div>
                     <div class="opcoes-tipo-veiculo">
@@ -153,12 +153,12 @@
                     <label for="">CEP</label>
                     <div class="input">
                         <img src="assets/icones/icone-cep.svg" alt="icone: cep">
-                        <input data-mask="cep" placeholder="00000-000" inputmode="numeric" maxlength="9" />
+                        <input id="meuCep" data-mask="cep" placeholder="00000-000" inputmode="numeric" maxlength="9" />
                     </div>
                 </div>
 
                 <div class="botao-pesquisar">
-                    <button class="campo-botao">
+                    <button id="verificarDisponibilidade" class="campo-botao">
                         <img src="assets/icones/icone=pesquisar.svg" alt="icone: pesquisar">
                     </button>
                 </div>
