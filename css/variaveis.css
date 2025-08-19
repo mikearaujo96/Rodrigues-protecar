@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* 🎨 Cores principais */
+  --color-fundo-nav: rgba(0, 0, 0, 0.47);
+  --color-borda-nav: rgba(255, 255, 255, 0.2);
+  --color-1: #010101;
+  --color-2: #393939;
+  --color-bt: #cd0100;
+  --color-texto-claro: #ffffff;
+  --color-3: #aa0101;
+  --color-4: #000000;
+  --color-5: #191919;
+
+  /* ✍️ Tipografia */
+  --font-1: "Figtree", sans-serif;
+  --font-2: "Work Sans", sans-serif;
+
+  /* 🔠 Tamanhos de fonte */
+  --tam-1: 0.75rem;  /* 12px */
+  --tam-2: 0.875rem; /* 14px */
+  --tam-3: 1rem;     /* 16px */
+  --tam-4: 1.25rem;  /* 20px */
+  --tam-5: 1.5rem;   /* 24px */
+  --tam-6: 2rem;    /* 32px */
+
+}
