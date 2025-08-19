@@ -25,6 +25,7 @@
     <meta name="twitter:image" content="https://www.rodriguestravaprotecar.com.br/assets/logos/logo-escura.svg">
     <!-- CSS e JS -->
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/transicaoNav.js" defer></script>
     <title>Rodrigues Trava Protecar</title>
 </head>
 
@@ -35,7 +36,7 @@
 
             <div class="logo-nav">
                 <a href="#">
-                    <img src="assets/logos/logo-clara.svg" alt="Logo: Rodrigues Trava Protecar">
+                    <img id="logo-rodrigues" src="assets/logos/logo-clara.svg" alt="Logo: Rodrigues Trava Protecar">
                 </a>
             </div>
 
@@ -69,10 +70,10 @@
 
                 <div class="links-redes-sociais">
                     <a href="#">
-                        <img src="assets/icones/icon-facebook-claro.svg" alt="Icone facebook: Rodrigues Trava Protecar">
+                        <img id="icone-facebook" src="assets/icones/icon-facebook-claro.svg" alt="Icone facebook: Rodrigues Trava Protecar">
                     </a>
                     <a href="#">
-                        <img src="assets/icones/icon-instagram-claro.svg"
+                        <img id="icone-instagram" src="assets/icones/icon-instagram-claro.svg"
                             alt="Icone instagram: Rodrigues Trava Protecar">
                     </a>
                 </div>
@@ -107,7 +108,48 @@
                 </button>
             </div>
         </section>
+
+        <section class="busca-por-servicos">
+            <div class="titulo-busca-por-servicos">
+                <h3>Verifique a disponibilidade dos nossos serviços na sua região</h3>
+            </div>
+
+            <div class="inputs-busca-por-servicos">
+                <div class="selecione-tipo-veiculo">
+                    <label for="">Tipo do veículo</label>
+                    <div class="input">
+                        <img src="assets/icones/icon-carro.svg" alt="icone: carro">
+                        <input type="text" placeholder="Tipo de veiculo" disabled>
+                        <img src="assets/icones/icon-seta2.svg" alt="icone: seta">
+                    </div>
+                </div>
+
+                <div class="selecione-ano-veiculo">
+                    <label for="">Ano do veículo</label>
+                    <div class="input">
+                        <img src="assets/icones/icone-calendario.svg" alt="icone: calendario">
+                        <input type="number" id="ano" name="ano" min="2000" max="2025" placeholder="2025" disabled>
+                    </div>
+                </div>
+
+                <div class="selecione-cep-proprietario">
+                    <label for="">CEP</label>
+                    <div class="input">
+                        <img src="assets/icones/icone-cep.svg" alt="icone: cep">
+                        <input type="text" placeholder="Digite seu CEP" disabled>
+                    </div>
+                </div>
+                <div class="botao-pesquisar">
+                    <button><img src="assets/icones/icone=pesquisar.svg" alt="icone: pesquisar"></button>
+                </div>
+            </div>
+        </section>
+
+
+
     </header>
+    <main>
+    </main>
 </body>
 
 </html>

@@ -4,7 +4,9 @@
     background: linear-gradient(to top, var(--color-1), var(--color-2));
     padding: 170px 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
 }
 
 
@@ -75,10 +77,12 @@
             overflow: hidden;
             position: relative;
 
+
             & img {
                 position: absolute;
                 bottom: 0%;
                 width: 100%;
+                height: calc(100% - 1px);
             }
         }
     }
@@ -136,12 +140,168 @@
     inset: 0;
     border-radius: 20px;
     padding: 2px;
-    /* espessura da borda */
     background: linear-gradient(90deg, var(--color-3), var(--color-4), var(--color-4));
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     z-index: -1;
+}
+
+.busca-por-servicos {
+    position: relative;
+    height: 275px;
+    width: calc(100% - 190px);
+    background-color: #181818;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    & .titulo-busca-por-servicos {
+        width: 100%;
+        padding-top: 30px;
+
+        & h3 {
+            font-family: var(--font-1);
+            font-size: var(--tam-3);
+            font-weight: 300;
+            text-align: center;
+            color: var(--color-texto-claro);
+        }
+    }
+
+    & .inputs-busca-por-servicos {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+
+
+        & div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            & label {
+                font-family: var(--font-1);
+                font-size: var(--tam-3);
+                font-weight: 100;
+                color: var(--color-texto-claro);
+            }
+
+            & .input {
+                background-color: #363434;
+                border-radius: 10px;
+                border: 1px solid #AA0101;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 10px;
+
+
+                & img {
+                    width: 30px;
+                }
+
+                & input {
+                    border: none;
+                    background-color: transparent;
+                    outline: none;
+                    color: #616161;
+                    font-family: var(--font-1);
+                    font-size: var(--tam-3);
+                    font-weight: 400;
+                    width: 100%;
+                    text-align: center;
+                    cursor: pointer;
+
+                }
+
+                & input[type="number"]::-webkit-inner-spin-button,
+                input[type="number"]::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                & input[type="number"] {
+                    -moz-appearance: textfield;
+                    -webkit-appearance: none;
+                    /* Chrome, Safari, Edge */
+                    appearance: none;
+                }
+
+
+
+            }
+        }
+
+        & .selecione-tipo-veiculo {
+            width: 509px;
+        }
+
+        & .selecione-ano-veiculo {
+            width: 220px;
+        }
+
+        & .selecione-cep-proprietario {
+            width: 220px;
+        }
+
+        & .botao-pesquisar {
+            height: 100%;
+            justify-content: flex-end;
+
+            & button {
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+
+                & img {
+                    width: 60px;
+                }
+            }
+        }
+    }
+
+}
+
+.busca-por-servicos::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 1.5px;
+    /* espessura da borda */
+    background: linear-gradient(90deg, var(--color-3), var(--color-4));
+    background-size: 600% 600%;
+    animation: gradientMove 8s ease infinite;
+    z-index: -1;
+     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
