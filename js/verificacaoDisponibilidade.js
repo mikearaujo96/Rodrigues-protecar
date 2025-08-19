@@ -64,7 +64,7 @@ function exibirPopupAnoCarros() {
 function renderizarLista() {
     let listaAno = []
 
-    for (let i = 2000; i <= 2025; i++) {
+    for (let i = 1970; i <= 2025; i++) {
         listaAno.push(i)
     }
     listaAno.forEach((i) => {
@@ -105,7 +105,8 @@ document.querySelector('#verificarDisponibilidade').addEventListener('click', ()
     let tipo = inputVeriTipoVeiculo.value
     let ano = inputVeriAnoVeiculo.value
     let cep = meuCep.value
-
+    let resultadoOk = document.querySelector('.resultado-pesquisa.true')
+    let resultadoErro = document.querySelector('.resultado-pesquisa.false')
 
     if (tipo == "") {
         console.log('campo tipo vazio')
@@ -143,14 +144,14 @@ document.querySelector('#verificarDisponibilidade').addEventListener('click', ()
                         UF: data.uf
                     };
                     localStorage.setItem('endereco', JSON.stringify(enderecoArray));
-
-                    if (enderecoArray.Cidade == "São Paulo") {
-                        document.querySelector('.resultado-pesquisa.true').classList.add = 'ativo';
-                        document.querySelector('.resultado-pesquisa.false').classList.remove = 'ativo';
+                    if (data.localidade === "São Paulo") {
+                        resultadoOk.classList.add("ativo");
+                        resultadoErro.classList.remove("ativo")
                     } else {
-                        document.querySelector('.resultado-pesquisa.false').classList.add = 'ativo';
-                        document.querySelector('.resultado-pesquisa.true').classList.remove = 'ativo';
+                        resultadoErro.classList.add("ativo");
+                        resultadoOk.classList.remove("ativo")
                     }
+
 
 
                 }
@@ -163,3 +164,4 @@ document.querySelector('#verificarDisponibilidade').addEventListener('click', ()
     }
 
 })
+

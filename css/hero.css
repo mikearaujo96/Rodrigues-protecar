@@ -243,6 +243,7 @@
         & .selecione-tipo-veiculo {
             width: 509px;
             position: relative;
+            z-index: 2;
 
             & .opcoes-tipo-veiculo {
                 position: absolute;
@@ -318,6 +319,7 @@
         & .selecione-ano-veiculo {
             width: 220px;
             position: relative;
+            z-index: 2;
 
             & .opcoes-ano-veiculo {
                 position: absolute;
@@ -377,6 +379,7 @@
 
         & .selecione-cep-proprietario {
             width: 220px;
+            z-index: 2;
 
 
         }
@@ -474,6 +477,7 @@
 
     & .resultado-pesquisa.true.ativo {
         display: flex;
+        z-index: 1;
     }
 
     & .resultado-pesquisa.false {
@@ -495,6 +499,8 @@
 
     & .resultado-pesquisa.false.ativo {
         display: flex;
+        z-index: 1;
+
     }
 
 }
