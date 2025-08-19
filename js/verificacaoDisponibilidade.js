@@ -106,6 +106,7 @@ document.querySelector('#verificarDisponibilidade').addEventListener('click', ()
     let ano = inputVeriAnoVeiculo.value
     let cep = meuCep.value
 
+
     if (tipo == "") {
         console.log('campo tipo vazio')
     } else if (ano == "") {
@@ -113,16 +114,52 @@ document.querySelector('#verificarDisponibilidade').addEventListener('click', ()
     } else if (cep == "" || cep.length < 9) {
         console.log('campo cep vazio ou incorreto')
     } else {
-        console.log(`Tudo certo. Seu veiculo é: ${tipo}, o ano é ${ano}, e seu cep é ${cep}`)
+        // fetch() → pede os dados do CEP para a API.
+        // res.json() → transforma os dados da API em algo que o JS entende.
+        // .then(data => ...) → aqui você usa os dados, exibe ou armazena.
+        // .catch(err => ...) → trata erros se algo der errado.
 
         fetch(`https://viacep.com.br/ws/${cep}/json/`)
-            .then(res => {
+            // RESPOSTA DA API CODIGO HTTP 200, 300, 400 ou 500
+            .then((res) => {
                 if (!res.ok) {
                     throw new Error(`Erro na requisição: ${res.status}`);
+                } else {
+                    return res.json();
                 }
-                return res.json();
             })
-            .then(data => console.log(data))
-            .catch(err => console.error("Falha ao consultar CEP:", err));
+
+            // DADOS RECEBIDOS DA API EM JSON
+            .then(data => {
+                if (data.erro) {
+                    throw new Error("CEP não encontrado");
+                } else {
+                    // armazenando os dados em um array
+                    let enderecoArray = {
+                        Cep: data.cep,
+                        Rua: data.logradouro,
+                        Bairro: data.bairro,
+                        Cidade: data.localidade,
+                        UF: data.uf
+                    };
+                    localStorage.setItem('endereco', JSON.stringify(enderecoArray));
+
+                    if (enderecoArray.Cidade == "São Paulo") {
+                        document.querySelector('.resultado-pesquisa.true').classList.add = 'ativo';
+                        document.querySelector('.resultado-pesquisa.false').classList.remove = 'ativo';
+                    } else {
+                        document.querySelector('.resultado-pesquisa.false').classList.add = 'ativo';
+                        document.querySelector('.resultado-pesquisa.true').classList.remove = 'ativo';
+                    }
+
+
+                }
+            })
+
+            // TRATAMENTO DE ERROS
+            .catch((err) => {
+                console.error("Falha ao consultar CEP:", err);
+            })
     }
+
 })
