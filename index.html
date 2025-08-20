@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="js/transicaoNav.js" defer></script>
     <script src="js/verificacaoDisponibilidade.js" defer></script>
+    <script src="js/sectionProdutos.js" defer></script>
     <title>Rodrigues Trava Protecar</title>
 </head>
 
@@ -97,7 +98,9 @@
                 </div>
 
                 <div class="carrossel-banners">
-                    <img src="assets/banners/banner-principal.png" alt="imagem do carrossel 1">
+                    <video src="assets/banners/banner.mp4" id="meuVideo" autoplay muted loop playsinline
+                        preload="metadata"></video>
+                    <!-- <img src="assets/banners/banner.mp4" alt="imagem do carrossel 1"> -->
                 </div>
             </div>
 
@@ -243,6 +246,11 @@
             </div>
         </section>
     </main>
+
+    <script>
+        const video = document.getElementById("meuVideo");
+        video.playbackRate = 0.8; // 2x mais rápido
+    </script>
 </body>
 
 </html>
