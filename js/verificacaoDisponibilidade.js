@@ -23,6 +23,7 @@ opcoesTipoVeiculos.forEach(i => {
 function selecionarItemCarros(item) {
     item.addEventListener('click', () => {
         let nome = item.textContent
+        document.querySelector('.campo-botao>img').style.opacity = "1"
         atualizarInputComValorCarros(nome)
     })
 }
@@ -64,7 +65,7 @@ function exibirPopupAnoCarros() {
 function renderizarLista() {
     let listaAno = []
 
-    for (let i = 1970; i <= 2025; i++) {
+    for (let i = 2025; i >= 1940; i--) {
         listaAno.push(i)
     }
     listaAno.forEach((i) => {
@@ -74,6 +75,7 @@ function renderizarLista() {
 
 function selecionarAnoCarros(ano) {
     inputVeriAnoVeiculo.value = ano.innerHTML
+    document.querySelector('.campo-botao>img').style.opacity = "1"
     ocultarPopupAnoCarros()
 }
 
@@ -98,6 +100,14 @@ function formatCEP(v) {
     return d.length <= 5 ? d : d.slice(0, 5) + '-' + d.slice(5);
 }
 
+meuCep.addEventListener('input', () => {
+    if (meuCep.value.length == 9) {
+        document.querySelector('.campo-botao>img').style.opacity = "1"
+
+    }
+})
+
+
 
 
 // Envio form
@@ -107,13 +117,14 @@ document.querySelector('#verificarDisponibilidade').addEventListener('click', ()
     let cep = meuCep.value
     let resultadoOk = document.querySelector('.resultado-pesquisa.true')
     let resultadoErro = document.querySelector('.resultado-pesquisa.false')
+    document.querySelector('.campo-botao>img').style.opacity = "0.5"
 
     if (tipo == "") {
-        console.log('campo tipo vazio')
+        inputVeriTipoVeiculo.placeholder = "Campo vazio"
     } else if (ano == "") {
-        console.log('campo ano vazio')
+        inputVeriAnoVeiculo.placeholder = "Compo vazio"
     } else if (cep == "" || cep.length < 9) {
-        console.log('campo cep vazio ou incorreto')
+        meuCep.placeholder = "Campo vazio"
     } else {
         // fetch() → pede os dados do CEP para a API.
         // res.json() → transforma os dados da API em algo que o JS entende.
@@ -133,6 +144,8 @@ document.querySelector('#verificarDisponibilidade').addEventListener('click', ()
             // DADOS RECEBIDOS DA API EM JSON
             .then(data => {
                 if (data.erro) {
+                    resultadoErro.classList.add("ativo");
+                    resultadoOk.classList.remove("ativo")
                     throw new Error("CEP não encontrado");
                 } else {
                     // armazenando os dados em um array
@@ -144,12 +157,17 @@ document.querySelector('#verificarDisponibilidade').addEventListener('click', ()
                         UF: data.uf
                     };
                     localStorage.setItem('endereco', JSON.stringify(enderecoArray));
+
                     if (data.localidade === "São Paulo") {
                         resultadoOk.classList.add("ativo");
                         resultadoErro.classList.remove("ativo")
+                        document.querySelector('.campo-botao>img').style.opacity = "1"
+
                     } else {
                         resultadoErro.classList.add("ativo");
                         resultadoOk.classList.remove("ativo")
+                        document.querySelector('.campo-botao>img').style.opacity = "1"
+
                     }
 
 
@@ -162,6 +180,7 @@ document.querySelector('#verificarDisponibilidade').addEventListener('click', ()
                 console.error("Falha ao consultar CEP:", err);
             })
     }
+
 
 })
 

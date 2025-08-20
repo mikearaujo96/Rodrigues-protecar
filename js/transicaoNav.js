@@ -9,7 +9,7 @@ let itensMenu = document.querySelectorAll('.itens-nav>ul>li>a')
 window.addEventListener('scroll', () => {
     let scrollTela = window.scrollY
 
-    if (scrollTela > 500) {
+    if (scrollTela > 150) {
         menuNav.style.backgroundColor = '#fff';
         logoRodrigues.src = 'assets/logos/logo-escura.svg'
         iconeFacebook.src = 'assets/icones/icon-facebook-escuro.svg'
@@ -19,7 +19,7 @@ window.addEventListener('scroll', () => {
             i.style.fontWeight = '500'
         })
 
-    } else if (scrollTela < 500) {
+    } else if (scrollTela < 150) {
         menuNav.style.backgroundColor = 'var(--color-fundo-nav)';
         menuNav.style.transition = 'all 0.5s';
         logoRodrigues.src = 'assets/logos/logo-clara.svg'

@@ -2,7 +2,7 @@
     width: 100%;
     height: 1420px;
     background: linear-gradient(to top, var(--color-1), var(--color-2));
-    padding: 170px 0;
+    padding: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -388,7 +388,7 @@
             height: 100%;
             justify-content: flex-end;
 
-            & button {
+            & .campo-botao {
                 border: none;
                 background-color: transparent;
                 cursor: pointer;
