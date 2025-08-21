@@ -1,7 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
     user-select: none;
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 8px;
+    /* largura da barra */
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+    /* fundo da barra */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #750303;
+    /* cor do scroll */
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #940101;
+    /* cor quando passa o mouse */
 }
