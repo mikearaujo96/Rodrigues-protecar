@@ -51,7 +51,8 @@
     .box-container-precos {
         width: 340px;
         height: 770px;
-        background: linear-gradient(180deg, #1c1c1c9b 50%, #010101 100%);        backdrop-filter: blur(10px);
+        background: linear-gradient(180deg, #1c1c1c9b 50%, #010101 100%);
+        backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
 
 
@@ -70,6 +71,7 @@
                 text-align: center;
                 padding: 15px;
                 border-bottom: 1px solid white;
+                text-transform: uppercase;
             }
         }
 
@@ -80,6 +82,8 @@
             font-size: var(--tam-2);
             text-align: center;
             padding: 40px 15px;
+            height: 100px;
+
         }
     }
 
