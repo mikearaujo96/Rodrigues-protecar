@@ -1,0 +1,114 @@
+.precos {
+    display: flex;
+    flex-direction: column;
+    background-color: #010101;
+    padding-top: 100px;
+    position: relative;
+    z-index: -2;
+}
+
+.background-precos {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+
+    .video {
+        width: 60%;
+    }
+}
+
+.titulos-precos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+
+    h2 {
+        color: #fff;
+        font-family: var(--font-1);
+        font-weight: 600;
+        font-size: var(--tam-5);
+        text-transform: uppercase;
+    }
+
+    p {
+        color: #fff;
+        font-family: var(--font-1);
+        font-weight: 200;
+        font-size: var(--tam-2);
+    }
+}
+
+.container-precos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 200px;
+
+    .box-container-precos {
+        width: 340px;
+        height: 770px;
+        background: linear-gradient(180deg, #1c1c1c9b 50%, #010101 100%);        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+
+        .titulo-container-precos {
+            padding: 0 15px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            h4 {
+                color: #fff;
+                font-family: var(--font-1);
+                font-weight: 600;
+                font-size: var(--tam-4);
+                text-align: center;
+                padding: 15px;
+                border-bottom: 1px solid white;
+            }
+        }
+
+        p {
+            color: #fff;
+            font-family: var(--font-1);
+            font-weight: 600;
+            font-size: var(--tam-2);
+            text-align: center;
+            padding: 40px 15px;
+        }
+    }
+
+    .box-container-precos.principal {
+        background: linear-gradient(180deg, #AA0101 70%, #010101 100%);
+        position: relative;
+
+
+        .line-precos-1 {
+            position: absolute;
+            top: 10px;
+            left: 5px;
+            display: flex;
+            height: 90%;
+            width: 1px;
+            background: linear-gradient(180deg, #fff, #aa01010e);
+        }
+
+        .line-precos-2 {
+            position: absolute;
+            top: 10px;
+            right: 5px;
+            display: flex;
+            height: 90%;
+            width: 1px;
+            background: linear-gradient(180deg, #fff, #aa01010e);
+        }
+
+
+    }
+
+}
