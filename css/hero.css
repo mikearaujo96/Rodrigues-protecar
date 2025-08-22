@@ -19,13 +19,13 @@
     background: var(--color-5);
     z-index: 1;
 
-    & div {
+    div {
         width: 100%;
         height: calc(100% - 60px);
         display: flex;
 
 
-        & .conteudo {
+        .conteudo {
             width: 40%;
             height: 100%;
             display: flex;
@@ -37,14 +37,14 @@
             padding-left: 70px;
             gap: 20px;
 
-            & h1 {
+            h1 {
                 font-family: var(--font-1);
                 font-size: var(--tam-6);
                 color: var(--color-texto-claro);
                 font-weight: bolder;
             }
 
-            & h3 {
+            h3 {
                 font-family: var(--font-1);
                 font-size: var(--tam-2);
                 color: var(--color-texto-claro);
@@ -52,7 +52,7 @@
             }
 
 
-            & a {
+            a {
                 background-color: var(--color-bt);
                 padding: 12px 20px;
                 border-radius: 20px;
@@ -67,7 +67,7 @@
 
         }
 
-        & .carrossel-banners {
+        .carrossel-banners {
             width: 60%;
             height: 100%;
             display: flex;
@@ -76,8 +76,7 @@
             overflow: hidden;
             position: relative;
 
-
-            & img {
+            .video {
                 position: absolute;
                 bottom: 0%;
                 width: 100%;
@@ -86,7 +85,7 @@
         }
     }
 
-    & .botoes-controle-carrossel {
+    .botoes-controle-carrossel {
         width: 100%;
         height: 60px;
         background: linear-gradient(90deg, var(--color-3), var(--color-4), var(--color-4));
@@ -98,7 +97,7 @@
         border-radius: 0 0 10px 10px;
         overflow: hidden;
 
-        & .botao-retornar-banner {
+        .botao-retornar-banner {
             background: none;
             width: 35px;
             height: 35px;
@@ -107,13 +106,13 @@
             transform: rotate(180deg);
             opacity: 0.9;
 
-            & img {
+            img {
                 padding: 10px;
                 width: 100%;
             }
         }
 
-        & .botao-avancar-banner {
+        .botao-avancar-banner {
             background: none;
             width: 40px;
             height: 40px;
@@ -121,7 +120,7 @@
             border-radius: 50%;
             outline: none;
 
-            & img {
+            img {
                 padding: 10px;
                 width: 100%;
             }
@@ -161,11 +160,11 @@
     flex-direction: column;
     gap: 40px;
 
-    & .titulo-busca-por-servicos {
+    .titulo-busca-por-servicos {
         width: 100%;
         padding-top: 30px;
 
-        & h3 {
+        h3 {
             font-family: var(--font-1);
             font-size: var(--tam-3);
             font-weight: 300;
@@ -174,26 +173,26 @@
         }
     }
 
-    & .inputs-busca-por-servicos {
+    .inputs-busca-por-servicos {
         display: flex;
         gap: 30px;
         justify-content: center;
         align-items: center;
 
 
-        & div {
+        div {
             display: flex;
             flex-direction: column;
             gap: 10px;
 
-            & label {
+            label {
                 font-family: var(--font-1);
                 font-size: var(--tam-3);
                 font-weight: 100;
                 color: var(--color-texto-claro);
             }
 
-            & .input {
+            .input {
                 background-color: #363434;
                 border-radius: 10px;
                 border: 1px solid #AA0101;
@@ -205,11 +204,11 @@
                 cursor: pointer;
 
 
-                & img {
+                img {
                     width: 30px;
                 }
 
-                & input {
+                input {
                     border: none;
                     background-color: transparent;
                     outline: none;
@@ -223,13 +222,13 @@
                     color: #fff;
                 }
 
-                & input[type="number"]::-webkit-inner-spin-button,
+                input[type="number"]::-webkit-inner-spin-button,
                 input[type="number"]::-webkit-outer-spin-button {
                     -webkit-appearance: none;
                     margin: 0;
                 }
 
-                & input[type="number"] {
+                input[type="number"] {
                     -moz-appearance: textfield;
                     -webkit-appearance: none;
                     /* Chrome, Safari, Edge */
@@ -239,12 +238,12 @@
             }
         }
 
-        & .selecione-tipo-veiculo {
+        .selecione-tipo-veiculo {
             width: 509px;
             position: relative;
             z-index: 2;
 
-            & .opcoes-tipo-veiculo {
+            .opcoes-tipo-veiculo {
                 position: absolute;
                 top: 105%;
                 width: 100%;
@@ -256,7 +255,7 @@
                 animation-fill-mode: forwards;
 
 
-                & ul>li {
+                ul>li {
                     width: 100%;
                     padding: 10px;
                     list-style: none;
@@ -272,18 +271,18 @@
                     user-select: none;
                 }
 
-                & ul>li:focus {
+                ul>li:focus {
                     background: none;
                     color: inherit;
                     outline: none;
                     box-shadow: none;
                 }
 
-                & ul>li:hover {
+                ul>li:hover {
                     color: var(--color-texto-claro);
                 }
 
-                & ul>li:active {
+                ul>li:active {
                     box-shadow: none;
                     color: #ffffff83;
                 }
@@ -291,7 +290,7 @@
 
             }
 
-            & .opcoes-tipo-veiculo::before {
+            .opcoes-tipo-veiculo::before {
                 content: "";
                 transform: rotate(150deg);
                 position: absolute;
@@ -302,7 +301,7 @@
                 bottom: -10px;
             }
 
-            & .opcoes-tipo-veiculo::after {
+            .opcoes-tipo-veiculo::after {
                 content: "";
                 transform: rotate(150deg);
                 position: absolute;
@@ -315,12 +314,12 @@
 
         }
 
-        & .selecione-ano-veiculo {
+        .selecione-ano-veiculo {
             width: 220px;
             position: relative;
             z-index: 2;
 
-            & .opcoes-ano-veiculo {
+            .opcoes-ano-veiculo {
                 position: absolute;
                 top: 105%;
                 width: 100%;
@@ -331,16 +330,16 @@
                 animation-duration: 0.3s;
                 animation-fill-mode: forwards;
 
-                & ul {
+                ul {
                     overflow-y: scroll;
                 }
 
-                & ul::-webkit-scrollbar {
+                ul::-webkit-scrollbar {
                     display: none;
                     /* largura da barra de rolagem */
                 }
 
-                & ul>li {
+                ul>li {
                     width: 100%;
                     padding: 10px;
                     list-style: none;
@@ -356,18 +355,18 @@
                     user-select: none;
                 }
 
-                & ul>li:focus {
+                ul>li:focus {
                     background: none;
                     color: inherit;
                     outline: none;
                     box-shadow: none;
                 }
 
-                & ul>li:hover {
+                ul>li:hover {
                     color: var(--color-texto-claro);
                 }
 
-                & ul>li:active {
+                ul>li:active {
                     box-shadow: none;
                     color: #ffffff83;
                 }
@@ -376,23 +375,21 @@
 
         }
 
-        & .selecione-cep-proprietario {
+        .selecione-cep-proprietario {
             width: 220px;
             z-index: 2;
-
-
         }
 
-        & .botao-pesquisar {
+        .botao-pesquisar {
             height: 100%;
             justify-content: flex-end;
 
-            & .campo-botao {
+            .campo-botao {
                 border: none;
                 background-color: transparent;
                 cursor: pointer;
 
-                & img {
+                img {
                     width: 60px;
                 }
             }
@@ -400,7 +397,7 @@
 
     }
 
-    & .resultado-pesquisa {
+    .resultado-pesquisa {
         position: absolute;
         bottom: 0;
         display: flex;
@@ -410,12 +407,12 @@
         width: 100%;
         overflow: hidden;
 
-        & div {
+        div {
             display: flex;
             flex-direction: column;
             justify-content: center;
 
-            & h2 {
+            h2 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -424,30 +421,27 @@
                 color: var(--color-texto-claro);
                 font-weight: 300;
                 font-size: var(--tam-3);
-
             }
 
-            & h4 {
+            h4 {
                 font-family: var(--font-1);
                 color: var(--color-texto-claro);
                 font-weight: 300;
                 font-size: var(--tam-2);
-
             }
 
         }
 
     }
 
-    & .resultado-pesquisa.true {
+    .resultado-pesquisa.true {
         display: none;
         height: 0px;
         animation-name: resultado;
         animation-duration: 0.3s;
         animation-fill-mode: forwards;
 
-
-        & div>h2>.disponibilidade-de-agendamento {
+        div>h2>.disponibilidade-de-agendamento {
             width: 12px;
             height: 12px;
             border-radius: 50%;
@@ -455,14 +449,14 @@
             animation: pulsar 1.5s infinite
         }
 
-        & .bt-agendamento {
+        .bt-agendamento {
             background-color: var(--color-bt);
             padding: 10px 40px;
             border-radius: 8px;
             animation: pulsar2 1.5s infinite;
 
 
-            & a {
+            a {
                 font-family: var(--font-1);
                 font-size: var(--tam-3);
                 font-weight: 300;
@@ -474,20 +468,19 @@
 
     }
 
-    & .resultado-pesquisa.true.ativo {
+    .resultado-pesquisa.true.ativo {
         display: flex;
         z-index: 1;
     }
 
-    & .resultado-pesquisa.false {
+    .resultado-pesquisa.false {
         display: none;
         height: 0px;
         animation-name: resultado;
         animation-duration: 0.3s;
         animation-fill-mode: forwards;
 
-
-        & div>h2>.disponibilidade-de-agendamento {
+        div>h2>.disponibilidade-de-agendamento {
             width: 12px;
             height: 12px;
             border-radius: 50%;
@@ -496,10 +489,9 @@
 
     }
 
-    & .resultado-pesquisa.false.ativo {
+    .resultado-pesquisa.false.ativo {
         display: flex;
         z-index: 1;
-
     }
 
 }
@@ -510,7 +502,6 @@
     inset: 0;
     border-radius: 20px;
     padding: 1.5px;
-    /* espessura da borda */
     background: linear-gradient(90deg, var(--color-3), var(--color-4));
     background-size: 600% 600%;
     animation: gradientMove 8s ease infinite;

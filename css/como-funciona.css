@@ -1,0 +1,111 @@
+.como-funciona {
+    display: flex;
+    flex-direction: column;
+    background-color: #010101;
+    padding-top: 100px;
+    background-image: url(../assets/imagens/background-como-funciona.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.titulo-como-funciona {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+
+    h2 {
+        color: #fff;
+        font-family: var(--font-1);
+        font-weight: 600;
+        font-size: var(--tam-5);
+    }
+
+    p {
+        color: #fff;
+        font-family: var(--font-1);
+        font-weight: 200;
+        font-size: var(--tam-2);
+    }
+}
+
+.container-como-funciona {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-self: center;
+    gap: 40px;
+    padding: 85px 0;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 450px;
+        height: 200px;
+        background-color: #1C1C1C;
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 0px 0px 10px #aa010151;
+
+        h4 {
+            color: #ffffff80;
+            font-family: var(--font-1);
+            font-weight: 100;
+            font-size: var(--tam-3);
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        p {
+            width: 80%;
+            color: #ffffff50;
+            font-family: var(--font-1);
+            font-weight: 100;
+            font-size: var(--tam-1);
+        }
+    }
+
+    .div1-como-funciona {
+        background-image: url(../assets/imagens/como-funciona-1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+    }
+
+    .div2-como-funciona {
+        background-image: url(../assets/imagens/como-funciona-2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .div3-como-funciona {
+        background-image: url(../assets/imagens/como-funciona-3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .div4-como-funciona {
+        background-image: url(../assets/imagens/como-funciona-4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+    }
+
+    .div5-como-funciona {
+        background-image: url(../assets/imagens/como-funciona-5.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .div6-como-funciona {
+        background-image: url(../assets/imagens/como-funciona-6.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}
