@@ -18,6 +18,7 @@
     padding: 2px;
     background: var(--color-5);
     z-index: 1;
+    background-color: #181818;
 
     div {
         width: 100%;
