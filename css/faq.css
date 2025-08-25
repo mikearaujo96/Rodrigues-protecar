@@ -1,0 +1,95 @@
+.duvidas-frequentes {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.titulo-faq {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-family: var(--font-2);
+        color: #403939;
+        font-weight: bolder;
+        font-size: var(--tam-6);
+    }
+}
+
+.container-perguntas {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 100px 0;
+
+    .perguntas-respostas-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-left: 2px solid #AA0101;
+        width: 40%;
+        padding: 0 10px;
+
+        .pergunta {
+            .pergunta {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 8px 0;
+                gap: 10px;
+
+                h4 {
+                    font-family: var(--font-1);
+                    color: #333131;
+                    font-weight: 800;
+                    font-size: var(--tam-3);
+                    width: 80%;
+                    text-align: justify;
+                    cursor: pointer;
+                }
+
+                span {
+                    cursor: pointer;
+                    display: flex;
+                    height: 100%;
+                    transform: rotate(-90deg);
+                }
+
+                span.active {
+                    cursor: pointer;
+                    display: flex;
+                    height: 100%;
+                    transform: rotate(0deg);
+
+
+                }
+            }
+
+            .resposta {
+                display: none;
+
+                p {
+                    width: 80%;
+                    font-family: var(--font-1);
+                    color: #333131;
+                    font-weight: 100;
+                    font-size: var(--tam-2);
+                    text-align: justify;
+                    border-bottom: 1px solid #333131;
+                    padding: 10px;
+                }
+            }
+
+
+
+        }
+
+
+    }
+
+}
