@@ -29,14 +29,107 @@
     <script src="js/verificacaoDisponibilidade.js" defer></script>
     <script src="js/sectionProdutos.js" defer></script>
     <script src="js/faq.js" defer></script>
+    <script src="js/menu-mobile.js" defer></script>
     <title>Rodrigues Trava Protecar</title>
 
 </head>
 
 <body>
     <header class="header">
-        <nav class="menu-de-navegacao">
 
+        <nav class="menu-mobile">
+
+            <div class="logo-nav-mobile">
+                <a href="#">
+                    <img src="assets/logos/logo-clara.svg" alt="Logo: Rodrigues Trava Protecar">
+                </a>
+            </div>
+
+            <div class="opcoes-menu-mobile">
+
+                <div class="botoes-nav-mobile">
+
+                    <div class="link-agendamento">
+                        <a href="#">AGENDAR INSTALAÇÃO</a>
+                    </div>
+                </div>
+
+                <div class="links-redes-sociais-mobile">
+                    <a href="#">
+                        <img src="assets/icones/icone-footer-WhatsApp.svg"
+                            alt="Icone facebook: Rodrigues Trava Protecar">
+                    </a>
+                    <a href="#">
+                        <img src="assets/icones/icon-instagram-claro.svg"
+                            alt="Icone instagram: Rodrigues Trava Protecar">
+                    </a>
+                </div>
+
+                <div class="icone-abertura-mobile">
+                    <button class="bt-abrir-mobile" onclick="abrirMobile()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- ativado -->
+            <div class="itens-menu-mobile">
+                <div class="links-nav-mobile">
+
+                    <div class="menu-mobile-fechar">
+                        <button class="fechar-menu-mobile" onclick="fecharMenu()">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <a href="">Produto</a>
+                        </li>
+                        <li>
+                            <a href="">Como funciona</a>
+                        </li>
+                        <li>
+                            <a href="">Nosso diferencial</a>
+                        </li>
+                        <li>
+                            <a href="">Curiosidades</a>
+                        </li>
+                        <li>
+                            <a href="">Sobre nós</a>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                        <li>
+                            <a href="">Contato</a>
+                        </li>
+                    </ul>
+
+                    <div class="link-agendamento-mob">
+                        <a class="bt" href="#">AGENDAR INSTALAÇÃO</a>
+                        <a href="#">
+                            <img src="assets/icones/icon-facebook-escuro.svg"
+                                alt="Icone facebook: Rodrigues Trava Protecar">
+                        </a>
+                        <a href="#">
+                            <img src="assets/icones/icon-instagram-escuro.svg"
+                                alt="Icone instagram: Rodrigues Trava Protecar">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <nav class="menu-de-navegacao">
             <div class="logo-nav">
                 <a href="#">
                     <img id="logo-rodrigues" src="assets/logos/logo-clara.svg" alt="Logo: Rodrigues Trava Protecar">
@@ -44,6 +137,7 @@
             </div>
 
             <div class="itens-nav">
+
                 <ul>
                     <li>
                         <a href="">Produto</a>
@@ -73,7 +167,7 @@
 
                 <div class="links-redes-sociais">
                     <a href="#">
-                        <img id="icone-facebook" src="assets/icones/icon-facebook-claro.svg"
+                        <img id="icone-facebook" src="assets/icones/icone-footer-WhatsApp.svg"
                             alt="Icone facebook: Rodrigues Trava Protecar">
                     </a>
                     <a href="#">
@@ -768,6 +862,7 @@
             </div>
         </section>
     </main>
+
     <footer>
         <section class="rodape-links">
             <div>

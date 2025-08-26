@@ -1,0 +1,15 @@
+body {
+
+    overflow-x: hidden;
+}
+@media screen and (max-width: 1000px) {
+
+  main,footer{
+    display: none !important;
+  }
+
+  .hero-section,.busca-por-servicos{
+
+  }
+
+}
