@@ -16,7 +16,7 @@ function alterarNavBar() {
         menuNav.style.backgroundColor = '#fff';
         menuNav.style.boxShadow = '0px 0px 4px #00000034'
         logoRodrigues.src = 'assets/logos/logo-escura.svg'
-        iconeFacebook.src = 'assets/icones/icone-footer-whatsapp.svg'
+        iconeFacebook.src = 'assets/icones/icone-whatsapp-escuro.svg'
         iconeInstagram.src = 'assets/icones/icon-instagram-escuro.svg'
         itensMenu.forEach(i => {
             i.style.color = 'var(--color-5)'
@@ -27,7 +27,7 @@ function alterarNavBar() {
         menuNav.style.backgroundColor = 'var(--color-fundo-nav)';
         menuNav.style.transition = 'all 0.5s';
         logoRodrigues.src = 'assets/logos/logo-clara.svg'
-        iconeFacebook.src = 'assets/icones/icone-footer-whatsapp.svg'
+        iconeFacebook.src = 'assets/icones/icone-footer-WhatsApp.svg'
         iconeInstagram.src = 'assets/icones/icon-instagram-claro.svg'
         itensMenu.forEach(i => {
             i.style.color = 'var(--color-texto-claro)'
