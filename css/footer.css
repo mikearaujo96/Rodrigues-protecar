@@ -1,0 +1,59 @@
+.rodape-links {
+    background-color: #1C1C1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 90px 40px 0px 40px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-self: start;
+        width: 20%;
+        height: 100%;
+        gap: 5px;
+
+        img{
+            width: 80%;
+        }
+
+
+        h3 {
+            font-family: var(--font-1);
+            font-size: var(--tam-3);
+            font-weight: 400;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: var(--font-1);
+            font-size: var(--tam-1);
+            font-weight: 100;
+            color: #ffffffac;
+            padding: 0 2px;
+        }
+
+
+    }
+}
+
+.rodape-marca {
+    background-color: #1C1C1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+
+    p {
+        text-align: center;
+        font-family: var(--font-1);
+        font-size: var(--tam-1);
+        font-weight: 100;
+        color: #ffffffac;
+
+    }
+}

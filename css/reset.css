@@ -8,22 +8,14 @@
 
 /* Chrome, Edge, Safari */
 ::-webkit-scrollbar {
-    width: 8px;
-    /* largura da barra */
+    width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #111;
-    /* fundo da barra */
+    background: #767373;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #750303;
-    /* cor do scroll */
-    border-radius: 20px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #940101;
-    /* cor quando passa o mouse */
+    background: #212121;
+    border-radius: 2px;
 }
