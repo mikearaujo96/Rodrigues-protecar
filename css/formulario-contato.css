@@ -1,0 +1,287 @@
+.container-titulo-contato {
+    background-color: #AA0101;
+    height: 500px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .listras-contato {
+        width: 100%;
+
+        .faixa-bottom {
+            bottom: 0;
+            width: 100%;
+            height: 56px;
+            background-color: #fff;
+            position: relative;
+
+            span {
+                position: absolute;
+                left: 0;
+                display: flex;
+                height: 100%;
+                clip-path: polygon(0% 0%,
+                        90% 0%,
+                        100% 100%,
+                        0% 100%);
+            }
+
+            .faixa-1 {
+                width: 65%;
+                background: #1C1C1C;
+            }
+
+            .faixa-2 {
+                width: calc(65% - 14px);
+                background: #fff;
+            }
+
+            .faixa-3 {
+                width: calc(65% - (14px*2));
+                background: #1C1C1C;
+            }
+
+            .faixa-4 {
+                width: calc(65% - (14px*3));
+                background: #fff;
+            }
+        }
+
+    }
+
+    h3 {
+        padding-top: 75px;
+        font-family: var(--font-1);
+        color: #fff;
+        font-weight: 800;
+        font-size: var(--tam-6);
+    }
+
+    p {
+        padding: 25px 0;
+        font-family: var(--font-1);
+        color: #fff;
+        font-weight: 400;
+        font-size: var(--tam-3);
+    }
+
+    a {
+        background-color: #fff;
+        padding: 10px;
+        font-family: var(--font-1);
+        color: #1C1C1C;
+        font-weight: 800;
+        font-size: var(--tam-3);
+        text-decoration: none;
+        border: 5px #1C1C1C;
+        border-style: double;
+    }
+
+}
+
+.container-conteudo-contato {
+    background-color: #060608;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    gap: 50px;
+
+    .inputs {
+        width: 50%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+            font-family: var(--font-1);
+            color: #fff;
+            font-size: var(--tam-5);
+            text-align: center;
+        }
+
+
+        .input-nome>input {
+            width: 100%;
+            height: 70px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            background-color: transparent;
+            color: #757171;
+            font-family: var(--font-1);
+            font-size: var(--tam-2);
+            padding: 10px;
+
+        }
+
+        .input-tel-email {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                width: 48%;
+                height: 70px;
+                border: none;
+                border-bottom: 1px solid #fff;
+                background-color: transparent;
+                color: #757171;
+                font-family: var(--font-1);
+                font-size: var(--tam-2);
+                padding: 10px;
+
+            }
+        }
+
+        .input-mensagem {
+            textarea {
+                width: 100%;
+                height: 150px;
+                padding: 10px;
+                border: none;
+                border-bottom: 1px solid #fff;
+                background-color: transparent;
+                resize: none;
+                font-family: var(--font-1);
+                font-size: var(--tam-2);
+                color: #fff;
+                outline: none;
+            }
+
+            textarea::placeholder {
+                font-family: var(--font-1);
+                font-size: var(--tam-2);
+                color: #757171;
+            }
+        }
+
+        .input-enviar {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+
+            .bt-enviar {
+                background-color: #AA0101;
+                padding: 10px;
+                font-family: var(--font-1);
+                color: #fff;
+                font-weight: 800;
+                font-size: var(--tam-3);
+                text-decoration: none;
+                border: 5px #fff;
+                border-style: double;
+                border-radius: 10px;
+            }
+
+
+        }
+
+    }
+
+    .divisoria {
+        display: flex;
+        width: 2px;
+        height: 350px;
+        background-color: #fff;
+    }
+
+    .contatos {
+        width: 30%;
+        height: 350px;
+
+        h2 {
+            font-family: var(--font-1);
+            color: #fff;
+            font-weight: 800;
+            font-size: var(--tam-4);
+        }
+
+        .telefones {
+            span {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    padding-top: 20px;
+                    font-family: var(--font-1);
+                    color: #ffffffa2;
+                    font-weight: 100;
+                    font-size: var(--tam-1);
+                }
+
+                h4 {
+                    font-family: var(--font-1);
+                    color: #ffffff;
+                    font-weight: 800;
+                    font-size: var(--tam-6);
+                    padding: 10px 0;
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-family: var(--font-1);
+                    color: #ffffff;
+                    font-weight: 800;
+                    font-size: var(--tam-4);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .emails {
+            padding-top: 20px;
+
+            p {
+                font-family: var(--font-1);
+                color: #ffffffa2;
+                font-weight: 100;
+                font-size: var(--tam-1);
+            }
+        }
+
+        .endereco {
+            padding-top: 20px;
+
+            p {
+                font-family: var(--font-1);
+                color: #ffffffa2;
+                font-weight: 100;
+                font-size: var(--tam-1);
+            }
+        }
+
+        .hr-atendimento {
+            padding-top: 20px;
+
+            p {
+                font-family: var(--font-1);
+                color: #ffffffa2;
+                font-weight: 100;
+                font-size: var(--tam-1);
+            }
+        }
+
+        .redes-sociais {
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            a {
+                text-decoration: none;
+
+                img {
+                    height: 30px;
+                    width: 30px;
+                }
+
+            }
+
+        }
+    }
+}
