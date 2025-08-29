@@ -1,7 +1,7 @@
 .header {
     width: 100%;
+    height: 100%;
     background: linear-gradient(to top, var(--color-1), var(--color-2));
-    padding: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,36 +10,33 @@
 
 
 .hero-section {
-    overflow: hidden;
-    width: calc(100% - 100px);
-    height: 550px;
-    position: relative;
-    border-radius: 20px;
-    padding: 2px;
-    background: var(--color-5);
-    z-index: 1;
-    background-color: #181818;
+    width: 100%;
 
-    div {
-        width: 100%;
-        height: calc(100% - 60px);
+    .hero-principal {
+        height: 600px;
         display: flex;
 
+        img {
+            width: 60%;
+            height: 100%;
+            object-fit: cover;
+        }
 
         .conteudo {
             width: 40%;
+            min-width: 300px;
             height: 100%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            border-radius: 16px 0 0 0;
             overflow: hidden;
-            padding-left: 70px;
-            gap: 20px;
+            padding: 0 0 0 70px;
+            gap: 30px;
+            background: linear-gradient(90deg, #111111 35%, #111111a4, #11111102);
 
             h1 {
-                font-family: var(--font-1);
+                font-family: var(--font-2);
                 font-size: var(--tam-6);
                 color: var(--color-texto-claro);
                 font-weight: bolder;
@@ -47,113 +44,44 @@
 
             h3 {
                 font-family: var(--font-1);
-                font-size: var(--tam-2);
+                font-size: var(--tam-3);
                 color: var(--color-texto-claro);
                 font-weight: 200;
             }
 
-
             a {
                 background-color: var(--color-bt);
                 padding: 12px 20px;
-                border-radius: 20px;
+                border-radius: 12px;
                 font-family: var(--font-1);
                 font-size: var(--tam-1);
                 font-weight: 400;
                 color: var(--color-texto-claro);
                 text-decoration: none;
-                border: 1px solid white;
+                border: 2px solid white;
+            }
+
+            a:hover {
+                border-radius: 20px;
+                transition: 0.5s all;
+                border: 2px solid #AA0101;
+                background-color: #fff;
+                color: #111111;
+
             }
 
 
         }
-
-        .carrossel-banners {
-            width: 60%;
-            height: 100%;
-            display: flex;
-            justify-content: flex-end;
-            border-radius: 0 16px 0 0;
-            overflow: hidden;
-            position: relative;
-
-            .video {
-                position: absolute;
-                bottom: 0%;
-                width: 100%;
-                height: calc(100% - 1px);
-            }
-        }
-    }
-
-    .botoes-controle-carrossel {
-        width: 100%;
-        height: 60px;
-        background: linear-gradient(90deg, var(--color-3), var(--color-4), var(--color-4));
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding-left: 150px;
-        gap: 100px;
-        border-radius: 0 0 10px 10px;
-        overflow: hidden;
-
-        .botao-retornar-banner {
-            background: none;
-            width: 35px;
-            height: 35px;
-            border: none;
-            outline: none;
-            transform: rotate(180deg);
-            opacity: 0.9;
-
-            img {
-                padding: 10px;
-                width: 100%;
-            }
-        }
-
-        .botao-avancar-banner {
-            background: none;
-            width: 40px;
-            height: 40px;
-            border: 1px solid var(--color-texto-claro);
-            border-radius: 50%;
-            outline: none;
-
-            img {
-                padding: 10px;
-                width: 100%;
-            }
-        }
-
 
     }
 
-
 }
 
-.hero-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 20px;
-    padding: 2px;
-    background: linear-gradient(90deg, var(--color-3), var(--color-4), var(--color-4));
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    z-index: -1;
-}
 
 .busca-por-servicos {
     position: relative;
-    width: calc(100% - 190px);
-    height: 280px;
-    background-color: #181818;
+    width: 90%;
+    background-color: #363434;
     padding-bottom: 70px;
     z-index: 1;
     border-radius: 20px;
@@ -164,14 +92,16 @@
     .titulo-busca-por-servicos {
         width: 100%;
         padding-top: 30px;
+        z-index: 1;
 
         h3 {
             font-family: var(--font-1);
-            font-size: var(--tam-3);
-            font-weight: 300;
+            font-size: var(--tam-4);
+            font-weight: 800;
             text-align: center;
-            color: var(--color-texto-claro);
+            color: #ffffff;
         }
+
     }
 
     .inputs-busca-por-servicos {
@@ -179,7 +109,8 @@
         gap: 30px;
         justify-content: center;
         align-items: center;
-
+        flex-wrap: wrap;
+        z-index: 1;
 
         div {
             display: flex;
@@ -187,6 +118,7 @@
             gap: 10px;
 
             label {
+                height: 20px;
                 font-family: var(--font-1);
                 font-size: var(--tam-3);
                 font-weight: 100;
@@ -194,7 +126,7 @@
             }
 
             .input {
-                background-color: #363434;
+                background-color: #111111;
                 border-radius: 10px;
                 border: 1px solid #AA0101;
                 display: flex;
@@ -203,7 +135,6 @@
                 align-items: center;
                 padding: 15px 10px;
                 cursor: pointer;
-
 
                 img {
                     width: 30px;
@@ -242,7 +173,7 @@
         .selecione-tipo-veiculo {
             width: 509px;
             position: relative;
-            z-index: 2;
+            z-index: 4;
 
             .opcoes-tipo-veiculo {
                 position: absolute;
@@ -254,7 +185,7 @@
                 overflow: hidden;
                 animation-duration: 0.3s;
                 animation-fill-mode: forwards;
-
+                box-shadow: 0px 0px 20px #908f8f5c;
 
                 ul>li {
                     width: 100%;
@@ -318,7 +249,7 @@
         .selecione-ano-veiculo {
             width: 220px;
             position: relative;
-            z-index: 2;
+            z-index: 3;
 
             .opcoes-ano-veiculo {
                 position: absolute;
@@ -330,6 +261,7 @@
                 overflow: hidden;
                 animation-duration: 0.3s;
                 animation-fill-mode: forwards;
+                box-shadow: 0px 0px 20px #908f8f5c;
 
                 ul {
                     overflow-y: scroll;
@@ -400,13 +332,15 @@
 
     .resultado-pesquisa {
         position: absolute;
-        bottom: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 100px;
         width: 100%;
+        height: 100%;
         overflow: hidden;
+        background-color: #111111;
+        z-index: 3;
 
         div {
             display: flex;
@@ -441,6 +375,7 @@
         animation-name: resultado;
         animation-duration: 0.3s;
         animation-fill-mode: forwards;
+        padding: 0 10px;
 
         div>h2>.disponibilidade-de-agendamento {
             width: 12px;
@@ -600,4 +535,97 @@
     100% {
         height: 0px;
     }
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+
+
+    .hero-section {
+        width: 100%;
+
+        .hero-principal {
+            height: 600px;
+            display: flex;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 70%;
+                object-fit: cover;
+            }
+
+            .conteudo {
+                position: absolute;
+                width: 100%;
+                min-width: 300px;
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                overflow: hidden;
+                padding: 100px 10px;
+                gap: 30px;
+                background: linear-gradient(90deg, #11111187 35%, #11111138, #11111102);
+
+                h1 {
+                    font-family: var(--font-2);
+                    font-size: var(--tam-4);
+                    color: var(--color-texto-claro);
+                    font-weight: bolder;
+                }
+
+                h3 {
+                    font-family: var(--font-1);
+                    font-size: var(--tam-1);
+                    color: var(--color-texto-claro);
+                    font-weight: 200;
+                }
+
+                a {
+                    background-color: var(--color-bt);
+                    padding: 8px 12px;
+                    border-radius: 12px;
+                    font-family: var(--font-1);
+                    font-size: var(--tam-1);
+                    font-weight: 100;
+                    color: var(--color-texto-claro);
+                    text-decoration: none;
+                    border: 1px solid white;
+                }
+
+                a:hover {
+                    border-radius: 20px;
+                    transition: 0.5s all;
+                    border: 1px solid #AA0101;
+                    background-color: #fff;
+                    color: #111111;
+
+                }
+
+
+            }
+
+        }
+
+    }
+
+    .selecione-tipo-veiculo,
+    .selecione-ano-veiculo {
+        width: 90% !important;
+    }
+
+    .selecione-cep-proprietario {
+        width: 65% !important;
+
+    }
+
+    .botao-pesquisar {
+        width: 15% !important;
+    }
+
+
 }

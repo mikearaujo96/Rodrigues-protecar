@@ -37,98 +37,6 @@
 <body>
     <header class="header">
 
-        <nav class="menu-mobile">
-
-            <div class="logo-nav-mobile">
-                <a href="#">
-                    <img src="assets/logos/logo-clara.svg" alt="Logo: Rodrigues Trava Protecar">
-                </a>
-            </div>
-
-            <div class="opcoes-menu-mobile">
-
-                <div class="botoes-nav-mobile">
-
-                    <div class="link-agendamento">
-                        <a href="#">AGENDAR INSTALAÇÃO</a>
-                    </div>
-                </div>
-
-                <div class="links-redes-sociais-mobile">
-                    <a href="#">
-                        <img src="assets/icones/icone-footer-WhatsApp.svg"
-                            alt="Icone facebook: Rodrigues Trava Protecar">
-                    </a>
-                    <a href="#">
-                        <img src="assets/icones/icon-instagram-claro.svg"
-                            alt="Icone instagram: Rodrigues Trava Protecar">
-                    </a>
-                </div>
-
-                <div class="icone-abertura-mobile">
-                    <button class="bt-abrir-mobile" onclick="abrirMobile()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
-                    </button>
-                </div>
-
-            </div>
-
-            <!-- ativado -->
-            <div class="itens-menu-mobile">
-                <div class="links-nav-mobile">
-
-                    <div class="menu-mobile-fechar">
-                        <button class="fechar-menu-mobile" onclick="fecharMenu()">
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
-
-                    <ul>
-                        <li>
-                            <a href="">Produto</a>
-                        </li>
-                        <li>
-                            <a href="">Como funciona</a>
-                        </li>
-                        <li>
-                            <a href="">Nosso diferencial</a>
-                        </li>
-                        <li>
-                            <a href="">Curiosidades</a>
-                        </li>
-                        <li>
-                            <a href="">Sobre nós</a>
-                        </li>
-                        <li>
-                            <a href="">Blog</a>
-                        </li>
-                        <li>
-                            <a href="">Contato</a>
-                        </li>
-                    </ul>
-
-                    <div class="link-agendamento-mob">
-                        <a class="bt" href="#">AGENDAR INSTALAÇÃO</a>
-                        <a href="#">
-                            <img src="assets/icones/icon-facebook-escuro.svg"
-                                alt="Icone facebook: Rodrigues Trava Protecar">
-                        </a>
-                        <a href="#">
-                            <img src="assets/icones/icon-instagram-escuro.svg"
-                                alt="Icone instagram: Rodrigues Trava Protecar">
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-
-
         <nav class="menu-de-navegacao">
             <div class="logo-nav">
                 <a href="#">
@@ -184,28 +92,19 @@
 
         <section class="hero-section">
 
-            <div>
+            <div class="hero-principal">
+                <img src="./assets/banners/banner-novo.png" alt="">
+
                 <div class="conteudo">
                     <h1>Proteja seu veículo, sem <br>perder tempo.</h1>
-                    <h3>Instale a trava protecar e durma tranquilo. Segurança reforçada, instalação rápida e máxima
+                    <h3>Instale a trava protecar e durma tranquilo. <br>Segurança reforçada, instalação rápida e máxima
                         confiança.</h3>
                     <a href="#">AGENDAR INSTALAÇÃO</a>
                 </div>
 
-                <div class="carrossel-banners">
-                    <video class="video" src="assets/banners/teste-video-banner-1.mp4" id="meuVideo" autoplay muted loop
-                        playsinline preload="metadata"></video>
-                </div>
+
             </div>
 
-            <div class="botoes-controle-carrossel">
-                <button class="botao-retornar-banner">
-                    <img src="assets/icones/icon-seta.svg" alt="icone seta: retornar banner">
-                </button>
-                <button class="botao-avancar-banner">
-                    <img src="assets/icones/icon-seta.svg" alt="icone seta: retornar banner">
-                </button>
-            </div>
         </section>
 
         <section class="busca-por-servicos">
@@ -235,9 +134,8 @@
                     <label for="">Ano do veículo</label>
                     <div id="abrir-ano-veiculos" class="input">
                         <img src="assets/icones/icone-calendario.svg" alt="icone: calendario">
-                        <input type="number" id="input-veri-2" name="ano" min="2000" max="2025" placeholder="Ex.: 2020"
-                            readonly>
-                        <img src="assets/icones/icon-seta2.svg" alt="icone: seta">
+                        <input type="number" id="input-veri-2" name="ano" min="2000" max="2025"
+                            placeholder="Ex.: 2020"><img src="assets/icones/icon-seta2.svg" alt="icone: seta">
                     </div>
                     <div class="opcoes-ano-veiculo">
                         <ul id="lista-de-anos-veiculos">
@@ -255,6 +153,7 @@
                 </div>
 
                 <div class="botao-pesquisar">
+                    <label for=""></label>
                     <button id="verificarDisponibilidade" class="campo-botao">
                         <img src="assets/icones/icone=pesquisar.svg" alt="icone: pesquisar">
                     </button>
@@ -344,25 +243,31 @@
                 <h2>Da Contratação à Instalação</h2>
                 <p>Entenda o processo e saiba como proteger seu veículo em poucos passos</p>
             </div>
+
             <div class="container-como-funciona">
-                <div class="div1-como-funciona">
-                    <h4>Você entra em contato</h4>
-                    <p>Nos chame pelo WhatsApp ou formulário do site para tirar dúvidas e solicitar o serviço.</p>
+                <div>
+                    <div class="div1-como-funciona">
+                        <h4>Você entra em contato</h4>
+                        <p>Nos chame pelo WhatsApp ou formulário do site para tirar dúvidas e solicitar o serviço.</p>
+                    </div>
+                    <div class="div2-como-funciona">
+                        <h4>Agendamos seu atendimentoo</h4>
+                        <p>Juntos, definimos o melhor dia e horário para realizar a instalação do trava-carneiro no seu
+                            veículo.</p>
+                    </div>
                 </div>
-                <div class="div2-como-funciona">
-                    <h4>Agendamos seu atendimentoo</h4>
-                    <p>Juntos, definimos o melhor dia e horário para realizar a instalação do trava-carneiro no seu
-                        veículo.</p>
-                </div>
-                <div class="div3-como-funciona">
-                    <h4>Fazemos a instalação</h4>
-                    <p>No dia marcado, um técnico especializado vai até você para realizar a instalação com total
-                        segurança.</p>
-                </div>
-                <div class="div4-como-funciona">
-                    <h4>Você realiza o pagamento</h4>
-                    <p>Após a instalação, você realiza o pagamento com total praticidade — aceitamos dinheiro, Pix,
-                        cartões de débito ou crédito, tudo no ato.</p>
+                <div>
+                    <div class="div3-como-funciona">
+                        <h4>Fazemos a instalação</h4>
+                        <p>No dia marcado, um técnico especializado vai até você para realizar a instalação com total
+                            segurança.</p>
+                    </div>
+                    <div class="div4-como-funciona">
+                        <h4>Você realiza o pagamento</h4>
+                        <p>Após a instalação, você realiza o pagamento com total praticidade — aceitamos dinheiro, Pix,
+                            cartões de débito ou crédito, tudo no ato.</p>
+                    </div>
+
                 </div>
             </div>
 
@@ -372,17 +277,19 @@
             </div>
 
             <div class="container-como-funciona">
-                <div class="div5-como-funciona">
-                    <h4>Bloqueio da parte elétrica</h4>
-                    <p>O sistema corta totalmente a energia e desativa a bateria, impedindo qualquer tentativa de
-                        ligação.</p>
+                <div>
+                    <div class="div5-como-funciona">
+                        <h4>Bloqueio da parte elétrica</h4>
+                        <p>O sistema corta totalmente a energia e desativa a bateria, impedindo qualquer tentativa de
+                            ligação.</p>
+                    </div>
+                    <div class="div6-como-funciona">
+                        <h4>Travamento das rodas</h4>
+                        <p>O dispositivo trava as rodas e os discos de freio, dificultando qualquer tentativa de
+                            empurrar ou
+                            rebocar o veículo.</p>
+                    </div>
                 </div>
-                <div class="div6-como-funciona">
-                    <h4>Travamento das rodas</h4>
-                    <p>O dispositivo trava as rodas e os discos de freio, dificultando qualquer tentativa de empurrar ou
-                        rebocar o veículo.</p>
-                </div>
-
             </div>
         </section>
 
@@ -495,36 +402,47 @@
         </section>
 
         <section class="sobre-nos">
-            <div class="conteudo-sobre-nos">
-                <div class="imagem1">
-                    <img src="assets/imagens/sobre-nos-1.png" alt="imagem1">
+            <div>
+                <div class="conteudo-sobre-nos">
+                    <div class="imagem1">
+                        <img src="assets/imagens/sobre-nos-1.png" alt="imagem1">
+                    </div>
+                    <div class="imagem2">
+                        <img src="assets/imagens/sobre-nos-2.png" alt="imagem2">
+                    </div>
+                    <div class="imagem3">
+                        <img src="assets/imagens/background-motivos.png" alt="imagem3">
+                    </div>
                 </div>
-                <div class="imagem2">
-                    <img src="assets/imagens/sobre-nos-2.png" alt="imagem2">
+
+                <div class="conteudo-text-sobre-nos">
+                    <p><span>Mais que segurança, uma história de confiança</span> Fundada em 2015</p>
+                    <p>Rodrigues Trava Protecar nasceu de uma paixão antiga: proteger veículos e garantir tranquilidade
+                        para
+                        seus proprietários. Sempre trabalhando com soluções de segurança, encontramos na Protecar Brasil
+                        uma
+                        ferramenta com um potencial incrível — capaz de elevar a proteção a um nível que muitos ainda
+                        desconhecem.
+                        Mesmo sendo um produto criado há anos, ele ainda não recebeu a visibilidade e credibilidade que
+                        merece. É por isso que nossa missão é apresentar ao mercado todo o seu valor, mostrando como
+                        essa
+                        tecnologia pode realmente fazer a diferença na vida de quem depende do carro para o dia a dia ou
+                        para o trabalho.
+                        Nosso diferencial vai muito além da instalação rápida e sem modificações no veículo. Aqui,
+                        prezamos
+                        por honestidade, transparência e excelência no trabalho, oferecendo um atendimento humanizado,
+                        tanto
+                        antes quanto depois da venda. Com a Trava Protecar, o veículo fica protegido contra furtos de
+                        forma
+                        eficaz, cortando todo o sistema elétrico e travando as rodas, garantindo segurança real e
+                        comprovada.
+                        Hoje, já são mais de 500 clientes satisfeitos que confiam em nosso trabalho. Para nós, cada
+                        cliente
+                        é mais do que um número: é uma história, um compromisso e uma vida que merece seguir segura.</p>
                 </div>
-                <div class="imagem3">
-                    <img src="assets/imagens/background-motivos.png" alt="imagem3">
-                </div>
+
             </div>
 
-            <div class="conteudo-text-sobre-nos">
-                <p><span>Mais que segurança, uma história de confiança</span> Fundada em 2015</p>
-                <p>Rodrigues Trava Protecar nasceu de uma paixão antiga: proteger veículos e garantir tranquilidade para
-                    seus proprietários. Sempre trabalhando com soluções de segurança, encontramos na Protecar Brasil uma
-                    ferramenta com um potencial incrível — capaz de elevar a proteção a um nível que muitos ainda
-                    desconhecem.
-                    Mesmo sendo um produto criado há anos, ele ainda não recebeu a visibilidade e credibilidade que
-                    merece. É por isso que nossa missão é apresentar ao mercado todo o seu valor, mostrando como essa
-                    tecnologia pode realmente fazer a diferença na vida de quem depende do carro para o dia a dia ou
-                    para o trabalho.
-                    Nosso diferencial vai muito além da instalação rápida e sem modificações no veículo. Aqui, prezamos
-                    por honestidade, transparência e excelência no trabalho, oferecendo um atendimento humanizado, tanto
-                    antes quanto depois da venda. Com a Trava Protecar, o veículo fica protegido contra furtos de forma
-                    eficaz, cortando todo o sistema elétrico e travando as rodas, garantindo segurança real e
-                    comprovada.
-                    Hoje, já são mais de 500 clientes satisfeitos que confiam em nosso trabalho. Para nós, cada cliente
-                    é mais do que um número: é uma história, um compromisso e uma vida que merece seguir segura.</p>
-            </div>
 
             <div class="footer-sobre-nos">
                 <div class="faixa-bottom">
@@ -898,6 +816,7 @@
                 <a href="">Blog</a>
             </div>
         </section>
+
         <section class="rodape-marca">
             <p>© 2025 Rodrigues Trava Protecar – Todos os direitos reservados.</p>
         </section>
