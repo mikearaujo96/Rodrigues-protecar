@@ -15,7 +15,6 @@
 
 
         div {
-            height: 100%;
             flex: 1 1 50%;
             height: 100%;
         }
@@ -146,4 +145,19 @@
         }
     }
 
+}
+
+@media screen and (max-width: 800px) {
+    .conteudo-sobre-nos {
+        transform: scale(0.7);
+    }
+
+    .conteudo-text-sobre-nos {
+        width: 100% !important;
+
+        p {
+            font-size: var(--tam-1) !important;
+            padding: 5px 20px !important;
+        }
+    }
 }

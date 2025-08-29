@@ -56,6 +56,7 @@
         color: #fff;
         font-weight: 800;
         font-size: var(--tam-6);
+        text-align: center;
     }
 
     p {
@@ -64,6 +65,8 @@
         color: #fff;
         font-weight: 400;
         font-size: var(--tam-3);
+        text-align: center;
+
     }
 
     a {
@@ -76,6 +79,8 @@
         text-decoration: none;
         border: 5px #1C1C1C;
         border-style: double;
+        text-align: center;
+
     }
 
 }
@@ -85,6 +90,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 100px 0;
     gap: 50px;
 
@@ -286,9 +292,11 @@
                 font-weight: 100;
                 font-size: var(--tam-1);
             }
+
             p:nth-child(2) {
                 color: #fff;
             }
+
             p:nth-child(3) {
                 color: #fff;
             }
@@ -312,6 +320,31 @@
 
             }
 
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+
+    .container-conteudo-contato {
+
+        .inputs {
+            width: 95%;
+
+        }
+
+        .divisoria {
+            display: flex;
+            height: 2px;
+            width: 90%;
+            background-color: #ffffff3c;
+        }
+
+        .contatos {
+            width: 95%;
+            padding: 0 10px;
         }
     }
 }

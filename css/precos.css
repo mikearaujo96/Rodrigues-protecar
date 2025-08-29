@@ -120,3 +120,49 @@
     }
 
 }
+
+
+
+@media screen and (max-width: 800px) {
+    .precos {}
+
+    .titulos-precos {
+        align-items: center;
+
+        p {
+            width: 80%;
+            color: #fff;
+            font-family: var(--font-1);
+            font-weight: 200;
+            font-size: var(--tam-2);
+            text-align: justify;
+        }
+    }
+
+
+
+    .container-precos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .box-container-precos {
+            min-width: 90%;
+            height: 770px;
+            background: linear-gradient(180deg, #1c1c1c9b 50%, #010101 100%);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+
+            .titulo-container-precos {
+
+            }
+        }
+
+        .box-container-precos.principal {
+            order: -1;
+        }
+
+    }
+
+}

@@ -241,7 +241,18 @@
 
 
 @media screen and (max-width: 800px) {
+    .conteudo-mais-motivos {
+        width: 100%;
+        justify-content: center;
+        overflow-x: hidden;
 
+        .lista-motivos {
+            .conteudo-motivos {
+                height: 120px;
+                min-width: 60vw;
+            }
+        }
+    }
 
     .line-motivos {
         display: none !important;
