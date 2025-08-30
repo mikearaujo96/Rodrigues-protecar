@@ -12,104 +12,94 @@
 .hero-section {
     width: 100%;
     padding-bottom: 50px;
+}
 
+.hero-principal {
+    display: flex;
+    height: auto !important;
+}
 
-    .hero-principal {
-        display: flex;
-        height: auto !important;
+#bgVideo {
+    width: 60%;
+    height: 500px;
+    object-fit: cover;
+    opacity: 0;
+    animation: aparecer-texto2 2s forwards;
+}
 
-        video {
-            width: 60%;
-            height: 500px;
-            object-fit: cover;
-            opacity: 0;
-            animation: aparecer-texto2 2s forwards;
-        }
+#bgFallback {
+    display: none;
+    width: 60%;
+    height: 500px;
+    object-fit: cover;
+    opacity: 0;
+    animation: aparecer-texto2 2s forwards;
+}
 
-        img {
-            display: none;
-            width: 60%;
-            height: 500px;
-            object-fit: cover;
-            opacity: 0;
-            animation: aparecer-texto2 2s forwards;
-        }
+.hero-principal .conteudo {
+    width: 40%;
+    min-width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 0 0 70px;
+    gap: 30px;
+    background: linear-gradient(90deg, #111111 35%, #111111a4, #11111102);
+}
 
-        .conteudo {
-            width: 40%;
-            min-width: 300px;
-            height: 500px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            overflow: hidden;
-            padding: 0 0 0 70px;
-            gap: 30px;
-            background: linear-gradient(90deg, #111111 35%, #111111a4, #11111102);
+.hero-principal .conteudo .texto {
+    font-family: var(--font-2);
+    font-size: var(--tam-6);
+    color: var(--color-texto-claro);
+    font-weight: bolder;
+    word-break: normal;
+    text-transform: uppercase;
+}
 
-            .texto {
-                font-family: var(--font-2);
-                font-size: var(--tam-6);
-                color: var(--color-texto-claro);
-                font-weight: bolder;
-                word-break: normal;
-                text-transform: uppercase;
-            }
-
-            .char {
-                display: inline-block;
-                opacity: 0;
-                filter: blur(6px);
-                transform: translateY(10px);
-                animation: aparecer-texto 0.6s forwards;
-            }
-
-
-
-            h3 {
-                font-family: var(--font-1);
-                font-size: var(--tam-3);
-                color: var(--color-texto-claro);
-                font-weight: 200;
-                opacity: 0;
-                animation: aparecer-texto2 4s linear forwards;
-
-            }
-
-            a {
-                background-color: var(--color-bt);
-                padding: 12px 20px;
-                border-radius: 12px;
-                font-family: var(--font-1);
-                font-size: var(--tam-1);
-                font-weight: 400;
-                color: var(--color-texto-claro);
-                text-decoration: none;
-                border: 2px solid white;
-                opacity: 0;
-                animation: aparecer-texto2 2s forwards;
-            }
-
-            a:hover {
-                border-radius: 20px;
-                transition: 0.5s all;
-                border: 2px solid #AA0101;
-                background-color: #fff;
-                color: #111111;
-
-            }
-
-
-        }
-
-    }
-
+.hero-principal .conteudo .char {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(6px);
+    transform: translateY(10px);
+    animation: aparecer-texto 0.6s forwards;
 }
 
 
 
+.hero-principal .conteudo h3 {
+    font-family: var(--font-1);
+    font-size: var(--tam-3);
+    color: var(--color-texto-claro);
+    font-weight: 200;
+    opacity: 0;
+    animation: aparecer-texto2 4s linear forwards;
 
+}
+
+.hero-principal .conteudo a {
+    background-color: var(--color-bt);
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-family: var(--font-1);
+    font-size: var(--tam-1);
+    font-weight: 400;
+    color: var(--color-texto-claro);
+    text-decoration: none;
+    border: 2px solid white;
+    opacity: 0;
+    animation: aparecer-texto2 2s forwards;
+}
+
+.hero-principal .conteudo a:hover {
+    border-radius: 20px;
+    transition: 0.5s all;
+    border: 2px solid #AA0101;
+    background-color: #fff;
+    color: #111111;
+}
 
 .busca-por-servicos {
     position: relative;
@@ -121,348 +111,6 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-
-    .titulo-busca-por-servicos {
-        width: 100%;
-        padding-top: 30px;
-        z-index: 1;
-
-        h3 {
-            font-family: var(--font-1);
-            font-size: var(--tam-4);
-            font-weight: 800;
-            text-align: center;
-            color: #ffffff;
-        }
-
-    }
-
-    .inputs-busca-por-servicos {
-        display: flex;
-        gap: 30px;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        z-index: 1;
-
-        div {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-
-            label {
-                height: 20px;
-                font-family: var(--font-1);
-                font-size: var(--tam-3);
-                font-weight: 100;
-                color: var(--color-texto-claro);
-            }
-
-            .input {
-                background-color: #111111;
-                border-radius: 10px;
-                border: 1px solid #AA0101;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                padding: 15px 10px;
-                cursor: pointer;
-
-                img {
-                    width: 30px;
-                }
-
-                input {
-                    border: none;
-                    background-color: transparent;
-                    outline: none;
-                    color: var(--color-texto-input);
-                    font-family: var(--font-1);
-                    font-size: var(--tam-3);
-                    font-weight: 400;
-                    width: 100%;
-                    text-align: center;
-                    cursor: pointer;
-                    color: #fff;
-                }
-
-                input[type="number"]::-webkit-inner-spin-button,
-                input[type="number"]::-webkit-outer-spin-button {
-                    -webkit-appearance: none;
-                    margin: 0;
-                }
-
-                input[type="number"] {
-                    -moz-appearance: textfield;
-                    -webkit-appearance: none;
-                    /* Chrome, Safari, Edge */
-                    appearance: none;
-                }
-
-            }
-        }
-
-        .selecione-tipo-veiculo {
-            width: 509px;
-            position: relative;
-            z-index: 4;
-
-            .opcoes-tipo-veiculo {
-                position: absolute;
-                top: 105%;
-                width: 100%;
-                height: 0%;
-                background-color: black;
-                border-radius: 0 0 10px 10px;
-                overflow: hidden;
-                animation-duration: 0.3s;
-                animation-fill-mode: forwards;
-                box-shadow: 0px 0px 20px #908f8f5c;
-
-                ul>li {
-                    width: 100%;
-                    padding: 10px;
-                    list-style: none;
-                    color: var(--color-texto-input);
-                    text-align: center;
-                    font-family: var(--font-1);
-                    font-size: var(--font-1);
-                    font-weight: 100;
-                    cursor: pointer;
-                    outline: none;
-                    /* garante que foco não apareça */
-                    box-shadow: none;
-                    user-select: none;
-                }
-
-                ul>li:focus {
-                    background: none;
-                    color: inherit;
-                    outline: none;
-                    box-shadow: none;
-                }
-
-                ul>li:hover {
-                    color: var(--color-texto-claro);
-                }
-
-                ul>li:active {
-                    box-shadow: none;
-                    color: #ffffff83;
-                }
-
-
-            }
-
-            .opcoes-tipo-veiculo::before {
-                content: "";
-                transform: rotate(150deg);
-                position: absolute;
-                width: 3px;
-                height: 100px;
-                background-color: red;
-                left: 10px;
-                bottom: -10px;
-            }
-
-            .opcoes-tipo-veiculo::after {
-                content: "";
-                transform: rotate(150deg);
-                position: absolute;
-                width: 3px;
-                height: 100px;
-                background-color: red;
-                left: 0;
-                bottom: -10px;
-            }
-
-        }
-
-        .selecione-ano-veiculo {
-            width: 220px;
-            position: relative;
-            z-index: 3;
-
-            .opcoes-ano-veiculo {
-                position: absolute;
-                top: 105%;
-                width: 100%;
-                height: 0%;
-                background-color: black;
-                border-radius: 0 0 10px 10px;
-                overflow: hidden;
-                animation-duration: 0.3s;
-                animation-fill-mode: forwards;
-                box-shadow: 0px 0px 20px #908f8f5c;
-
-                ul {
-                    overflow-y: scroll;
-                }
-
-                ul::-webkit-scrollbar {
-                    display: none;
-                    /* largura da barra de rolagem */
-                }
-
-                ul>li {
-                    width: 100%;
-                    padding: 10px;
-                    list-style: none;
-                    color: var(--color-texto-input);
-                    text-align: center;
-                    font-family: var(--font-1);
-                    font-size: var(--font-1);
-                    font-weight: 100;
-                    cursor: pointer;
-                    outline: none;
-                    /* garante que foco não apareça */
-                    box-shadow: none;
-                    user-select: none;
-                }
-
-                ul>li:focus {
-                    background: none;
-                    color: inherit;
-                    outline: none;
-                    box-shadow: none;
-                }
-
-                ul>li:hover {
-                    color: var(--color-texto-claro);
-                }
-
-                ul>li:active {
-                    box-shadow: none;
-                    color: #ffffff83;
-                }
-            }
-
-
-        }
-
-        .selecione-cep-proprietario {
-            width: 220px;
-            z-index: 2;
-        }
-
-        .botao-pesquisar {
-            height: 100%;
-            justify-content: flex-end;
-
-            .campo-botao {
-                border: none;
-                background-color: transparent;
-                cursor: pointer;
-
-                img {
-                    width: 60px;
-                }
-            }
-        }
-
-    }
-
-    .resultado-pesquisa {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 100px;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background-color: #111111;
-        z-index: 3;
-
-        div {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            h2 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
-                font-family: var(--font-1);
-                color: var(--color-texto-claro);
-                font-weight: 300;
-                font-size: var(--tam-3);
-            }
-
-            h4 {
-                font-family: var(--font-1);
-                color: var(--color-texto-claro);
-                font-weight: 300;
-                font-size: var(--tam-2);
-            }
-
-        }
-
-    }
-
-    .resultado-pesquisa.true {
-        display: none;
-        height: 0px;
-        animation-name: resultado;
-        animation-duration: 0.3s;
-        animation-fill-mode: forwards;
-        padding: 0 10px;
-
-        div>h2>.disponibilidade-de-agendamento {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: green;
-            animation: pulsar 1.5s infinite
-        }
-
-        .bt-agendamento {
-            background-color: var(--color-bt);
-            padding: 10px 40px;
-            border-radius: 8px;
-            animation: pulsar2 1.5s infinite;
-
-
-            a {
-                font-family: var(--font-1);
-                font-size: var(--tam-3);
-                font-weight: 300;
-                color: var(--color-texto-claro);
-                text-decoration: none;
-            }
-        }
-
-
-    }
-
-    .resultado-pesquisa.true.ativo {
-        display: flex;
-        z-index: 1;
-    }
-
-    .resultado-pesquisa.false {
-        display: none;
-        height: 0px;
-        animation-name: resultado;
-        animation-duration: 0.3s;
-        animation-fill-mode: forwards;
-
-        div>h2>.disponibilidade-de-agendamento {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: red;
-        }
-
-    }
-
-    .resultado-pesquisa.false.ativo {
-        display: flex;
-        z-index: 1;
-    }
-
 }
 
 .busca-por-servicos::before {
@@ -482,6 +130,340 @@
     -webkit-mask-composite: xor;
     mask-composite: exclude;
 
+}
+
+
+.titulo-busca-por-servicos {
+    width: 100%;
+    padding-top: 30px;
+    z-index: 1;
+}
+
+.titulo-busca-por-servicos h3 {
+    font-family: var(--font-1);
+    font-size: var(--tam-4);
+    font-weight: 800;
+    text-align: center;
+    color: #ffffff;
+}
+
+.inputs-busca-por-servicos {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.inputs-busca-por-servicos div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputs-busca-por-servicos div label {
+    height: 20px;
+    font-family: var(--font-1);
+    font-size: var(--tam-3);
+    font-weight: 100;
+    color: var(--color-texto-claro);
+}
+
+
+.inputs-busca-por-servicos div .input {
+    background-color: #111111;
+    border-radius: 10px;
+    border: 1px solid #AA0101;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.inputs-busca-por-servicos div .input img {
+    width: 30px;
+}
+
+.inputs-busca-por-servicos div .input input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: var(--color-texto-input);
+    font-family: var(--font-1);
+    font-size: var(--tam-3);
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+}
+
+.inputs-busca-por-servicos div .input input[type="number"]::-webkit-inner-spin-button,
+.inputs-busca-por-servicos div .input input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.inputs-busca-por-servicos div .input input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+
+.selecione-tipo-veiculo {
+    width: 509px;
+    position: relative;
+    z-index: 4;
+}
+
+.selecione-tipo-veiculo .opcoes-tipo-veiculo {
+    position: absolute;
+    top: 105%;
+    width: 100%;
+    height: 0%;
+    background-color: black;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    box-shadow: 0px 0px 20px #908f8f5c;
+}
+
+.selecione-tipo-veiculo .opcoes-tipo-veiculo ul li {
+    width: 100%;
+    padding: 10px;
+    list-style: none;
+    color: var(--color-texto-input);
+    text-align: center;
+    font-family: var(--font-1);
+    font-size: var(--font-1);
+    font-weight: 100;
+    cursor: pointer;
+    outline: none;
+    /* garante que foco não apareça */
+    box-shadow: none;
+    user-select: none;
+}
+
+.selecione-tipo-veiculo .opcoes-tipo-veiculo ul li:focus {
+    background: none;
+    color: inherit;
+    outline: none;
+    box-shadow: none;
+}
+
+.selecione-tipo-veiculo .opcoes-tipo-veiculo ul li:hover {
+    color: var(--color-texto-claro);
+}
+
+.selecione-tipo-veiculo .opcoes-tipo-veiculo ul li:active {
+    box-shadow: none;
+    color: #ffffff83;
+}
+
+
+.selecione-tipo-veiculo .opcoes-tipo-veiculo::before {
+    content: "";
+    transform: rotate(150deg);
+    position: absolute;
+    width: 3px;
+    height: 100px;
+    background-color: red;
+    left: 10px;
+    bottom: -10px;
+}
+
+.selecione-tipo-veiculo .opcoes-tipo-veiculo::after {
+    content: "";
+    transform: rotate(150deg);
+    position: absolute;
+    width: 3px;
+    height: 100px;
+    background-color: red;
+    left: 0;
+    bottom: -10px;
+}
+
+
+
+.selecione-ano-veiculo {
+    width: 220px;
+    position: relative;
+    z-index: 3;
+}
+
+.selecione-ano-veiculo .opcoes-ano-veiculo {
+    position: absolute;
+    top: 105%;
+    width: 100%;
+    height: 0%;
+    background-color: black;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    box-shadow: 0px 0px 20px #908f8f5c;
+}
+
+.selecione-ano-veiculo .opcoes-ano-veiculo ul {
+    overflow-y: scroll;
+}
+
+.selecione-ano-veiculo .opcoes-ano-veiculo ul::-webkit-scrollbar {
+    display: none;
+    /* largura da barra de rolagem */
+}
+
+.selecione-ano-veiculo .opcoes-ano-veiculo ul li {
+    width: 100%;
+    padding: 10px;
+    list-style: none;
+    color: var(--color-texto-input);
+    text-align: center;
+    font-family: var(--font-1);
+    font-size: var(--font-1);
+    font-weight: 100;
+    cursor: pointer;
+    outline: none;
+    /* garante que foco não apareça */
+    box-shadow: none;
+    user-select: none;
+}
+
+.selecione-ano-veiculo .opcoes-ano-veiculo ul li:focus {
+    background: none;
+    color: inherit;
+    outline: none;
+    box-shadow: none;
+}
+
+.selecione-ano-veiculo .opcoes-ano-veiculo ul li:hover {
+    color: var(--color-texto-claro);
+}
+
+.selecione-ano-veiculo .opcoes-ano-veiculo ul li:active {
+    box-shadow: none;
+    color: #ffffff83;
+}
+
+
+
+.selecione-cep-proprietario {
+    width: 220px;
+    z-index: 2;
+}
+
+.botao-pesquisar {
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.botao-pesquisar .campo-botao {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.botao-pesquisar .campo-botao img {
+    width: 60px;
+}
+
+.resultado-pesquisa {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #111111;
+    z-index: 3;
+}
+
+.resultado-pesquisa div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.resultado-pesquisa div h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-1);
+    color: var(--color-texto-claro);
+    font-weight: 300;
+    font-size: var(--tam-3);
+}
+
+.resultado-pesquisa div h4 {
+    font-family: var(--font-1);
+    color: var(--color-texto-claro);
+    font-weight: 300;
+    font-size: var(--tam-2);
+}
+
+.resultado-pesquisa.true {
+    display: none;
+    height: 0px;
+    animation-name: resultado;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    padding: 0 10px;
+}
+
+.resultado-pesquisa.true .atendimento h2 .disponibilidade-de-agendamento {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: green;
+    animation: pulsar 1.5s infinite
+}
+
+.resultado-pesquisa.true .bt-agendamento {
+    background-color: var(--color-bt);
+    padding: 10px 40px;
+    border-radius: 8px;
+    animation: pulsar2 1.5s infinite;
+}
+
+.resultado-pesquisa.true .bt-agendamento a {
+    font-family: var(--font-1);
+    font-size: var(--tam-3);
+    font-weight: 300;
+    color: var(--color-texto-claro);
+    text-decoration: none;
+}
+
+.resultado-pesquisa.true.ativo {
+    display: flex;
+    z-index: 1;
+}
+
+.resultado-pesquisa.false {
+    display: none;
+    height: 0px;
+    animation-name: resultado;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.resultado-pesquisa.false .atendimento h2 .disponibilidade-de-agendamento {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.resultado-pesquisa.false.ativo {
+    display: flex;
+    z-index: 1;
 }
 
 
@@ -598,85 +580,82 @@
 
     .hero-section {
         width: 100%;
-
-        .hero-principal {
-            height: 100vh !important;
-            display: flex;
-            position: relative;
-
-            video {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: 10% center;
-            }
-
-            .conteudo {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                padding: 0px 10px;
-                background: #11111102;
-
-                .texto {
-                    font-family: var(--font-2);
-                    font-size: var(--tam-5);
-                    color: var(--color-texto-claro);
-                    font-weight: bolder;
-                    text-shadow:
-                        2px 2px 4px rgba(0, 0, 0, 0.8),
-                        -2px -2px 4px rgba(0, 0, 0, 0.8);
-                }
-
-                h3 {
-                    font-family: var(--font-1);
-                    font-size: var(--tam-1);
-                    color: var(--color-texto-claro);
-                    font-weight: 200;
-                    text-shadow:
-                        2px 2px 4px rgba(0, 0, 0, 0.8),
-                        -2px -2px 4px rgba(0, 0, 0, 0.8);
-                }
-
-                a {
-                    padding: 20px 26px !important;
-                    font-size: var(--tam-2) !important;
-                }
-
-                a:hover {
-                    border-radius: 20px;
-                    transition: 0.5s all;
-                    border: 1px solid #AA0101;
-                    background-color: #fff;
-                    color: #111111;
-
-                }
-
-            }
-        }
-
     }
 
-
-
-    .selecione-tipo-veiculo,
-    .selecione-ano-veiculo {
-        width: 90% !important;
+    .hero-principal {
+        height: 100vh !important;
+        display: flex;
+        position: relative;
     }
 
-    .selecione-cep-proprietario {
-        width: 65% !important;
+    #bgVideo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
-    .botao-pesquisar {
-        width: 15% !important;
+    #bgFallback {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 10% center;
     }
+
+    .hero-principal .conteudo {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 0px 10px;
+        background: #11111102;
+    }
+
+    .hero-principal .conteudo .texto {
+        font-family: var(--font-2);
+        font-size: var(--tam-5);
+        color: var(--color-texto-claro);
+        font-weight: bolder;
+        text-shadow:
+            2px 2px 4px rgba(0, 0, 0, 0.8),
+            -2px -2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero-principal .conteudo h3 {
+        font-family: var(--font-1);
+        font-size: var(--tam-1);
+        color: var(--color-texto-claro);
+        font-weight: 200;
+        text-shadow:
+            2px 2px 4px rgba(0, 0, 0, 0.8),
+            -2px -2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero-principal .conteudo a {
+        padding: 20px 26px !important;
+        font-size: var(--tam-2) !important;
+    }
+
+    .hero-principal .conteudo a:hover {
+        border-radius: 20px;
+        transition: 0.5s all;
+        border: 1px solid #AA0101;
+        background-color: #fff;
+        color: #111111;
+
+    }
+}
+
+.selecione-tipo-veiculo,
+.selecione-ano-veiculo {
+    width: 90% !important;
+}
+
+.selecione-cep-proprietario {
+    width: 65% !important;
+}
+
+.botao-pesquisar {
+    width: 15% !important;
+}
 
 
 }
