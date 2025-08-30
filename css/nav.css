@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     z-index: 99;
+    overflow: hidden;
 }
 
 .logo-nav {
@@ -48,7 +49,7 @@
 
 }
 
-.itens-lista-nav li:hover{
+.itens-lista-nav li:hover {
     transform: translateY(-5px);
     transition: 0.3s all;
     border-bottom: 1px solid red;
@@ -71,6 +72,7 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
+    white-space: nowrap;
 }
 
 .links-redes-sociais {
@@ -86,6 +88,7 @@
     align-items: center;
     height: 30px;
 }
+
 .caixa-icone-instagram img {
     display: flex;
     justify-content: center;
@@ -112,6 +115,12 @@
 }
 
 
+@media screen and (max-width: 1200px) {
+    .links-redes-sociais {
+        display: none;
+    }
+
+}
 
 @media screen and (max-width: 1000px) {
     .menu-de-navegacao {

@@ -17,28 +17,27 @@
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
     /* opacity: 0; */
+}
 
-    .line {
-        width: 5px;
-        height: 100%;
-        background-color: #AA0101;
-        margin-right: 10px;
-        border-radius: 100px 0 100px 0;
-    }
+.titulo-produtos .line {
+    width: 5px;
+    height: 100%;
+    background-color: #AA0101;
+    margin-right: 10px;
+    border-radius: 100px 0 100px 0;
+}
 
-    h3 {
-        font-family: var(--font-1);
-        font-size: var(--tam-2);
-        font-weight: 400;
-        color: #d9d9d9;
+.titulo-produtos h3 {
+    font-family: var(--font-1);
+    font-size: var(--tam-2);
+    font-weight: 400;
+    color: #d9d9d9;
+}
 
-        .titulo {
-            font-size: var(--tam-5);
-            font-weight: bold;
-            color: #CDCBCB;
-        }
-
-    }
+.titulo-produtos h3 .titulo {
+    font-size: var(--tam-5);
+    font-weight: bold;
+    color: #CDCBCB;
 }
 
 .conteudo-section-produto {
@@ -48,110 +47,100 @@
     align-items: center;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    /* opacity: 0; */
+}
+
+.conteudo-section-produto .conteudo-imagem {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.conteudo-section-produto .conteudo-imagem img {
+    height: 396px;
+    max-height: 100%;
+}
+
+.conteudo-section-produto .conteudo-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 396px;
+    gap: 60px;
+}
+
+.conteudo-section-produto .conteudo-texto div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.conteudo-section-produto .conteudo-texto div p {
+    position: relative;
+    text-align: end;
+    font-family: var(--font-1);
+    font-size: var(--tam-1);
+    font-weight: 100;
+    color: var(--color-texto-claro);
+    animation: esticar2 2s;
+
+}
+
+.conteudo-section-produto .conteudo-texto div .apontamento {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    right: 0;
+    top: 10px;
+    animation: esticar 1.5s 1;
+}
+
+.conteudo-section-produto .conteudo-texto div .apontamento .linha {
+    position: absolute;
+    right: -10%;
+    display: flex;
+    width: 110%;
+    height: 3px;
+    background-color: var(--color-texto-claro);
+    z-index: 1;
+}
+
+.conteudo-section-produto .conteudo-texto div .apontamento .circulo {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color-texto-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.801);
+    z-index: 2;
+    left: -2px;
+    animation: pulsar 1.5s infinite;
+}
+
+.conteudo-section-produto .conteudo-texto div .apontamento .circulo::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
 
 
+.conteudo-section-produto .conteudo-texto div:nth-child(2) {
+    transform: translateX(-10%);
+}
 
-
-    .conteudo-imagem {
-        width: 40%;
-        display: flex;
-        justify-content: flex-end;
-
-
-        img {
-            height: 396px;
-            max-height: 100%;
-        }
-    }
-
-    .conteudo-texto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 60%;
-        height: 396px;
-        gap: 60px;
-
-        div {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-
-
-            p {
-                position: relative;
-                text-align: end;
-                font-family: var(--font-1);
-                font-size: var(--tam-1);
-                font-weight: 100;
-                color: var(--color-texto-claro);
-                animation: esticar2 2s;
-
-            }
-
-            .apontamento {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                right: 0;
-                top: 10px;
-                animation: esticar 1.5s 1;
-
-                .linha {
-                    position: absolute;
-                    right: -10%;
-                    display: flex;
-                    width: 110%;
-                    height: 3px;
-                    background-color: var(--color-texto-claro);
-                    z-index: 1;
-                }
-
-                .circulo {
-                    position: absolute;
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 50%;
-                    background-color: var(--color-texto-claro);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.801);
-                    z-index: 2;
-                    left: -2px;
-                    animation: pulsar 1.5s infinite;
-                }
-
-                .circulo::before {
-                    content: "";
-                    position: absolute;
-                    width: 10px;
-                    height: 10px;
-                    border-radius: 50%;
-                    background-color: black;
-                }
-
-
-            }
-
-
-        }
-
-        div:nth-child(2) {
-            transform: translateX(-10%);
-        }
-
-        div:nth-child(3) {
-            transform: translateX(-20%);
-        }
-
-    }
-
+.conteudo-section-produto .conteudo-texto div:nth-child(3) {
+    transform: translateX(-20%);
 }
 
 .galeria-produto {
@@ -162,27 +151,23 @@
     gap: 38px;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    /* opacity: 0; */
-
-
-
-
-
-    div {
-        width: 126px;
-        height: 126px;
-        background-color: red;
-        background: linear-gradient(90deg, rgba(68, 0, 0, 0.2), #AA0101);
-        border-radius: 12px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            height: 110%;
-        }
-    }
 }
+
+.galeria-produto div {
+    width: 126px;
+    height: 126px;
+    background-color: red;
+    background: linear-gradient(90deg, rgba(68, 0, 0, 0.2), #AA0101);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria-produto div img {
+    height: 110%;
+}
+
 
 .carregamento-section-produtos {
     width: 100%;
@@ -191,22 +176,17 @@
     overflow: hidden;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    /* opacity: 0; */
-
-
-
-    span {
-        display: flex;
-        width: 70%;
-        height: 100%;
-        background: #a60000;
-        transform: skewX(-50deg);
-        transform-origin: top left;
-    }
 }
 
 
-
+.carregamento-section-produtos span {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    background: #a60000;
+    transform: skewX(-50deg);
+    transform-origin: top left;
+}
 
 
 @keyframes pulsar {
@@ -253,58 +233,52 @@
         align-items: center;
         animation-duration: 1.5s;
         animation-fill-mode: forwards;
+    }
 
-        .conteudo-imagem {
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
-        }
+    .conteudo-section-produto .conteudo-imagem {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
 
-        .conteudo-texto {
-            position: absolute;
-            right: 0;
+    .conteudo-section-produto .conteudo-texto {
+        position: absolute;
+        right: 0;
+    }
 
-            div {
-                display: flex;
-                flex-direction: column;
-                width: 50%;
+    .conteudo-section-produto .conteudo-texto div {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
 
+    .conteudo-section-produto .conteudo-texto div p {
+        font-size: 9px;
+        font-weight: 100;
+        color: var(--color-texto-claro);
+        animation: esticar2 2s;
+        background-color: #1c1c1c82;
+        border-radius: 12px;
+        padding: 10px 5px;
+        text-align: center;
 
-                p {
-                    font-size: 9px;
-                    font-weight: 100;
-                    color: var(--color-texto-claro);
-                    animation: esticar2 2s;
-                    background-color: #1c1c1c82;
-                    border-radius: 12px;
-                    padding: 10px 5px;
-                    text-align: center;
+    }
 
-                }
-
-                .apontamento {
-                    display: none;
-
-                }
-
-
-            }
-
-
-        }
+    .conteudo-section-produto .conteudo-texto div .apontamento {
+        display: none;
 
     }
 
     .galeria-produto {
         gap: 20px;
-
-        div {
-            width: 96px;
-            height: 96px;
-            img {
-                height: 100%;
-            }
-        }
     }
 
+    .galeria-produto div {
+        width: 96px;
+        height: 96px;
+    }
+
+    .galeria-produto div img {
+        height: 100%;
+    }
 }

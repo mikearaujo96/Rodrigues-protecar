@@ -572,6 +572,40 @@
     }
 }
 
+@media screen and (max-width: 1130px) {
+
+    .hero-principal .conteudo {
+        padding: 0px 10px;
+    }
+
+    .hero-principal .conteudo .texto {
+        font-family: var(--font-2);
+        font-size: var(--tam-5);
+        color: var(--color-texto-claro);
+        font-weight: bolder;
+        text-shadow:
+            2px 2px 4px rgba(0, 0, 0, 0.8),
+            -2px -2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero-principal .conteudo h3 {
+        font-family: var(--font-1);
+        font-size: var(--tam-1);
+        color: var(--color-texto-claro);
+        font-weight: 200;
+        text-shadow:
+            2px 2px 4px rgba(0, 0, 0, 0.8),
+            -2px -2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero-principal .conteudo a {
+        padding: 20px 26px !important;
+        font-size: var(--tam-2) !important;
+    }
+
+}
+
+
 @media screen and (max-width: 800px) {
 
     .header {
@@ -642,20 +676,18 @@
         color: #111111;
 
     }
-}
 
-.selecione-tipo-veiculo,
-.selecione-ano-veiculo {
-    width: 90% !important;
-}
+    .selecione-tipo-veiculo,
+    .selecione-ano-veiculo {
+        width: 90% !important;
+    }
 
-.selecione-cep-proprietario {
-    width: 65% !important;
-}
+    .selecione-cep-proprietario {
+        width: 65% !important;
+    }
 
-.botao-pesquisar {
-    width: 15% !important;
-}
-
+    .botao-pesquisar {
+        width: 15% !important;
+    }
 
 }
