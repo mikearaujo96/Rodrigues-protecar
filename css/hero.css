@@ -45,6 +45,7 @@
                 color: var(--color-texto-claro);
                 font-weight: bolder;
                 word-break: normal;
+                text-transform: uppercase;
             }
 
             .char {
@@ -607,7 +608,7 @@
                 padding: 0px 10px;
                 background: #11111102;
 
-                h1 {
+                .texto {
                     font-family: var(--font-2);
                     font-size: var(--tam-5);
                     color: var(--color-texto-claro);
@@ -617,33 +618,31 @@
                         -2px -2px 4px rgba(0, 0, 0, 0.8);
                 }
 
+                h3 {
+                    font-family: var(--font-1);
+                    font-size: var(--tam-1);
+                    color: var(--color-texto-claro);
+                    font-weight: 200;
+                    text-shadow:
+                        2px 2px 4px rgba(0, 0, 0, 0.8),
+                        -2px -2px 4px rgba(0, 0, 0, 0.8);
+                }
+
+                a {
+                    padding: 20px 26px !important;
+                    font-size: var(--tam-2) !important;
+                }
+
+                a:hover {
+                    border-radius: 20px;
+                    transition: 0.5s all;
+                    border: 1px solid #AA0101;
+                    background-color: #fff;
+                    color: #111111;
+
+                }
+
             }
-
-            h3 {
-                font-family: var(--font-1);
-                font-size: var(--tam-1);
-                color: var(--color-texto-claro);
-                font-weight: 200;
-                text-shadow:
-                    2px 2px 4px rgba(0, 0, 0, 0.8),
-                    -2px -2px 4px rgba(0, 0, 0, 0.8);
-            }
-
-            a {
-                padding: 20px 26px !important;
-                font-size: var(--tam-2) !important;
-            }
-
-            a:hover {
-                border-radius: 20px;
-                transition: 0.5s all;
-                border: 1px solid #AA0101;
-                background-color: #fff;
-                color: #111111;
-
-            }
-
-
         }
 
     }

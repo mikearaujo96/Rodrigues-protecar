@@ -103,7 +103,7 @@
                 </video>
 
                 <div class="conteudo">
-                    <h1 class="texto" id="vento">Proteja seu veículo, sem <br> perder tempo.</h1>
+                    <h1 class="texto" id="vento">Proteja seu veículo<br>sem perder tempo.</h1>
                     <h3>Instale a trava protecar e durma tranquilo. <br>Segurança reforçada, instalação rápida e
                         máxima
                         confiança.</h3>
@@ -866,6 +866,14 @@
             originalNodes.forEach(n => splitNodeToSpans(n, root));
         });
 
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const video = document.getElementById("bgVideo");
+            video.play().catch(err => {
+                console.log("Autoplay bloqueado:", err);
+            });
+        });
     </script>
 
 </body>
