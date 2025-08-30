@@ -74,11 +74,13 @@
             <div class="botoes-nav">
 
                 <div class="links-redes-sociais">
-                    <a href="https://www.google.com/maps/place/RODRIGUES+TRAVA+PROTECAR+-+Instala%C3%A7%C3%A3o+em+Domic%C3%ADlio/@-23.5267397,-46.4360796,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce655cb475168b:0xb5d1e45a9ce46e10!8m2!3d-23.5267397!4d-46.4335047!16s%2Fg%2F11xs97rlrv?authuser=1&entry=tts&g_ep=EgoyMDI1MDgyNS4wIPu8ASoASAFQAw%3D%3D&skid=acd41415-1d44-46d4-98ad-6180302b12d9" target="_blank" rel="noopener noreferrer" class="caixa-icone-googlemaps">
+                    <a href="https://www.google.com/maps/place/RODRIGUES+TRAVA+PROTECAR+-+Instala%C3%A7%C3%A3o+em+Domic%C3%ADlio/@-23.5267397,-46.4360796,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce655cb475168b:0xb5d1e45a9ce46e10!8m2!3d-23.5267397!4d-46.4335047!16s%2Fg%2F11xs97rlrv?authuser=1&entry=tts&g_ep=EgoyMDI1MDgyNS4wIPu8ASoASAFQAw%3D%3D&skid=acd41415-1d44-46d4-98ad-6180302b12d9"
+                        target="_blank" rel="noopener noreferrer" class="caixa-icone-googlemaps">
                         <img id="icone-googlemaps" src="assets/icones/icon-googlemaps-claro.svg"
                             alt="Icone google maps: Rodrigues Trava Protecar">
                     </a>
-                    <a href="https://www.instagram.com/storetrava" target="_blank" rel="noopener noreferrer" class="caixa-icone-instagram">
+                    <a href="https://www.instagram.com/storetrava" target="_blank" rel="noopener noreferrer"
+                        class="caixa-icone-instagram">
                         <img id="icone-instagram" src="assets/icones/icon-instagram-claro.svg"
                             alt="Icone instagram: Rodrigues Trava Protecar">
                     </a>
@@ -96,13 +98,14 @@
 
         <section class="hero-section">
             <div class="hero-principal">
-                <!-- <img src="./assets/banners/banner-novo.png" alt=""> -->
 
-                <video id="bgVideo" muted playsinline autoplay loop preload="auto">
+                <video id="bgVideo" playsinline autoplay muted loop preload="auto">
                     <source src="assets/banners/banner-novo.mp4" type="video/mp4" />
                     <source src="assets/banners/banner-novo.webm" type="video/webm" />
                     Seu navegador não suporta o elemento video.
                 </video>
+
+                <img id="bgFallback" src="assets/banners/banner-novo.png" alt="Banner">
 
                 <div class="conteudo">
                     <h1 class="texto" id="vento">Proteja seu veículo<br>sem perder tempo.</h1>
@@ -872,11 +875,17 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const video = document.getElementById("bgVideo");
-            video.play().catch(err => {
-                console.log("Autoplay bloqueado:", err);
+            var video = document.getElementById("bgVideo");
+            var fallback = document.getElementById("bgFallback");
+
+            // Teste simples de autoplay
+            video.play().catch(function () {
+                // Se autoplay falhar, esconde o video e mostra a imagem
+                video.style.display = "none";
+                fallback.style.display = "block";
             });
         });
+
     </script>
 
 </body>

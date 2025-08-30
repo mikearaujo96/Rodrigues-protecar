@@ -25,6 +25,14 @@
             opacity: 0;
             animation: aparecer-texto2 2s forwards;
         }
+        img{
+            display: none;
+            width: 60%;
+            height: 500px;
+            object-fit: cover;
+            opacity: 0;
+            animation: aparecer-texto2 2s forwards;
+        }
 
         .conteudo {
             width: 40%;
