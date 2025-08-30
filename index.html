@@ -46,7 +46,7 @@
 
             <div class="itens-nav">
 
-                <ul>
+                <ul class="itens-lista-nav">
                     <li>
                         <a href="#sessao-produto">Produto</a>
                     </li>
@@ -74,28 +74,31 @@
             <div class="botoes-nav">
 
                 <div class="links-redes-sociais">
-                    <a href="#">
-                        <img id="icone-facebook" src="assets/icones/icone-footer-WhatsApp.svg"
-                            alt="Icone facebook: Rodrigues Trava Protecar">
+                    <a href="https://www.google.com/maps/place/RODRIGUES+TRAVA+PROTECAR+-+Instala%C3%A7%C3%A3o+em+Domic%C3%ADlio/@-23.5267397,-46.4360796,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce655cb475168b:0xb5d1e45a9ce46e10!8m2!3d-23.5267397!4d-46.4335047!16s%2Fg%2F11xs97rlrv?authuser=1&entry=tts&g_ep=EgoyMDI1MDgyNS4wIPu8ASoASAFQAw%3D%3D&skid=acd41415-1d44-46d4-98ad-6180302b12d9" target="_blank" rel="noopener noreferrer" class="caixa-icone-googlemaps">
+                        <img id="icone-googlemaps" src="assets/icones/icon-googlemaps-claro.svg"
+                            alt="Icone google maps: Rodrigues Trava Protecar">
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/storetrava" target="_blank" rel="noopener noreferrer" class="caixa-icone-instagram">
                         <img id="icone-instagram" src="assets/icones/icon-instagram-claro.svg"
                             alt="Icone instagram: Rodrigues Trava Protecar">
                     </a>
                 </div>
 
                 <div class="link-agendamento">
-                    <a href="#">AGENDAR INSTALAÇÃO</a>
+                    <a href="https://wa.me/5511987812686?text=Olá,%20vim%20pelo%20site%20e%20quero%20mais%20informações"
+                        target="_blank" rel="noopener noreferrer">
+                        Fale no WhatsApp
+                    </a>
+
                 </div>
             </div>
         </nav>
 
         <section class="hero-section">
-
             <div class="hero-principal">
                 <!-- <img src="./assets/banners/banner-novo.png" alt=""> -->
 
-                <video id="bgVideo" autoplay loop muted playsinline preload="auto">
+                <video id="bgVideo" playsinline autoplay muted loop preload="auto">
                     <source src="assets/banners/banner-novo.mp4" type="video/mp4" />
                     <source src="assets/banners/banner-novo.webm" type="video/webm" />
                     Seu navegador não suporta o elemento video.
@@ -867,6 +870,7 @@
         });
 
     </script>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const video = document.getElementById("bgVideo");

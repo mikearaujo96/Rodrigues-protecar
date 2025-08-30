@@ -1,6 +1,6 @@
-const menuNav = document.querySelector('.menu-de-navegacao');
+let menuNav = document.querySelector('.menu-de-navegacao');
 let logoRodrigues = document.querySelector('#logo-rodrigues');
-let iconeFacebook = document.querySelector('#icone-facebook');
+let iconeGoogleMaps = document.querySelector('#icone-googlemaps');
 let iconeInstagram = document.querySelector('#icone-instagram');
 let itensMenu = document.querySelectorAll('.itens-nav>ul>li>a')
 
@@ -16,7 +16,7 @@ function alterarNavBar() {
         menuNav.style.backgroundColor = '#fff';
         menuNav.style.boxShadow = '0px 0px 4px #00000034'
         logoRodrigues.src = 'assets/logos/logo-escura.svg'
-        iconeFacebook.src = 'assets/icones/icone-whatsapp-escuro.svg'
+        iconeGoogleMaps.src = 'assets/icones/icon-googlemaps-escuro.svg'
         iconeInstagram.src = 'assets/icones/icon-instagram-escuro.svg'
         itensMenu.forEach(i => {
             i.style.color = 'var(--color-5)'
@@ -27,7 +27,7 @@ function alterarNavBar() {
         menuNav.style.backgroundColor = 'var(--color-fundo-nav)';
         menuNav.style.transition = 'all 0.5s';
         logoRodrigues.src = 'assets/logos/logo-clara.svg'
-        iconeFacebook.src = 'assets/icones/icone-footer-WhatsApp.svg'
+        iconeGoogleMaps.src = 'assets/icones/icon-googlemaps-claro.svg'
         iconeInstagram.src = 'assets/icones/icon-instagram-claro.svg'
         itensMenu.forEach(i => {
             i.style.color = 'var(--color-texto-claro)'
