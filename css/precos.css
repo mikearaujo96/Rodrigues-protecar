@@ -10,6 +10,7 @@
     overflow-x: hidden;
 }
 
+
 .background-precos {
     position: absolute;
     width: 100%;
@@ -52,6 +53,7 @@
     display: flex;
     justify-content: center;
     padding: 50px 200px;
+
 }
 
 .container-precos .box-container-precos {
@@ -119,6 +121,8 @@
     width: 1px;
     background: linear-gradient(180deg, #fff, #aa01010e);
 }
+
+
 
 
 
