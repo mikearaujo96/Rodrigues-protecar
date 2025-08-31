@@ -89,6 +89,11 @@
     height: 30px;
 }
 
+.caixa-icone-googlemaps img:hover {
+    transform: translateY(-5px);
+    transition: 0.3s all;
+}
+
 .caixa-icone-instagram img {
     display: flex;
     justify-content: center;
@@ -96,10 +101,13 @@
     height: 30px;
 }
 
+.caixa-icone-instagram img:hover {
+    transform: translateY(-5px);
+    transition: 0.3s all;
+}
+
+
 .link-agendamento {
-    background-color: var(--color-bt);
-    padding: 14px 15px;
-    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,6 +120,18 @@
     color: var(--color-texto-claro);
     text-decoration: none;
     text-transform: uppercase;
+    background-color: var(--color-bt);
+    padding: 14px 15px;
+    border-radius: 20px;
+    border: 2px solid #fff
+}
+
+.link-agendamento a:hover {
+    border-radius: 25px;
+    transition: 0.5s all;
+    border: 2px solid #AA0101;
+    background-color: #fff;
+    color: #111111;
 }
 
 

@@ -1,7 +1,7 @@
 .header {
     width: 100%;
     height: auto;
-    background: linear-gradient(to top, var(--color-1), var(--color-2));
+    background-color: var(--color-1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +47,7 @@
     overflow: hidden;
     padding: 0 0 0 70px;
     gap: 30px;
-    background: linear-gradient(90deg, #111111 35%, #111111a4, #11111102);
+    background-color: var(--color-1);
 }
 
 .hero-principal .conteudo .texto {
@@ -66,8 +66,6 @@
     transform: translateY(10px);
     animation: aparecer-texto 0.6s forwards;
 }
-
-
 
 .hero-principal .conteudo h3 {
     font-family: var(--font-1);

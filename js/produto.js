@@ -1,6 +1,6 @@
 const barra = document.querySelector('.carregamento-section-produtos span');
 const imgPrincipal = document.getElementById('minhaImagem-produto');
-const galeria = document.querySelectorAll('.galeria-produto img');
+const galeria = document.querySelectorAll('.galeria-produto div');
 const textos = document.querySelectorAll('.conteudo-section-produto .conteudo-texto div p');
 
 const imagens = [
@@ -9,23 +9,25 @@ const imagens = [
     'assets/imagens/produto-angulo3.png'
 ];
 
+
 let indice = 0;
+
 
 // Atualiza a galeria com a sequência correta
 function atualizarGaleria(indicePrincipal) {
-    const novaGaleria = [];
-    for (let i = 1; i <= imagens.length; i++) {
-        novaGaleria.push(imagens[(indicePrincipal + i) % imagens.length]);
+    // Remove destaque de todos
+    for (let i = 0; i < galeria.length; i++) {
+        galeria[i].classList.remove('galeria-destaque');
+        galeria[i].style.transition = 'transform 0.2s linear'
     }
-    galeria.forEach((img, i) => {
-        img.src = novaGaleria[i];
-    });
+    galeria[indicePrincipal].classList.add("galeria-destaque")
 }
 
 // Atualiza o scale do texto correspondente
 function atualizarTexto(indicePrincipal) {
     textos.forEach((t, i) => {
         t.style.fontSize = (i === indicePrincipal) ? 'var(--tam-4)' : 'var(--tam-1)';
+        t.style.borderRight = (i === indicePrincipal) ? '3px solid #fff' : 'none';
     });
 }
 
