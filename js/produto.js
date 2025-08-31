@@ -25,7 +25,7 @@ function atualizarGaleria(indicePrincipal) {
 // Atualiza o scale do texto correspondente
 function atualizarTexto(indicePrincipal) {
     textos.forEach((t, i) => {
-        t.style.transform = (i === indicePrincipal) ? 'scale(1.2)' : 'scale(1)';
+        t.style.fontSize = (i === indicePrincipal) ? 'var(--tam-4)' : 'var(--tam-1)';
     });
 }
 
