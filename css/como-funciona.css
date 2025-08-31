@@ -13,167 +13,158 @@
     flex-direction: column;
     gap: 20px;
     text-align: center;
-
-    h2 {
-        color: #fff;
-        font-family: var(--font-1);
-        font-weight: 600;
-        font-size: var(--tam-5);
-    }
-
-    p {
-        color: #fff;
-        font-family: var(--font-1);
-        font-weight: 200;
-        font-size: var(--tam-2);
-    }
 }
 
-.container-como-funciona {
+.titulo-como-funciona h2 {
+    color: #fff;
+    font-family: var(--font-1);
+    font-weight: 600;
+    font-size: var(--tam-5);
+}
 
-    div {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
-        padding: 40px 0;
-        justify-content: center;
+.titulo-como-funciona p {
+    color: #fff;
+    font-family: var(--font-1);
+    font-weight: 200;
+    font-size: var(--tam-2);
+}
 
-        div {
-            display: flex;
-            flex-direction: column;
-            width: 450px;
-            height: 200px;
-            background-color: #1C1C1C;
-            border-radius: 20px;
-            padding: 10px;
-            box-shadow: 0px 0px 10px #aa010151;
-
-            h4 {
-                color: #ffffff80;
-                font-family: var(--font-1);
-                font-weight: 100;
-                font-size: var(--tam-3);
-                text-transform: uppercase;
-                text-align: center;
-            }
-
-            p {
-                width: 80%;
-                color: #ffffff50;
-                font-family: var(--font-1);
-                font-weight: 100;
-                font-size: var(--tam-1);
-            }
-
-        }
-
-
-        .div1-como-funciona {
-            background-image: url(../assets/imagens/como-funciona-1.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: right;
-        }
-
-        .div2-como-funciona {
-            background-image: url(../assets/imagens/como-funciona-2.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-        }
-
-        .div3-como-funciona {
-            background-image: url(../assets/imagens/como-funciona-3.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-        }
-
-        .div4-como-funciona {
-            background-image: url(../assets/imagens/como-funciona-4.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: right;
-        }
-
-        .div5-como-funciona {
-            background-image: url(../assets/imagens/como-funciona-5.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-        }
-
-        .div6-como-funciona {
-            background-image: url(../assets/imagens/como-funciona-6.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-        }
-    }
+.container-como-funciona div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 0;
+    justify-content: center;
 }
 
 
+.container-como-funciona div div {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 200px;
+    background-color: #1C1C1C;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #aa010151;
+}
+
+.container-como-funciona div div h4 {
+    color: #ffffff80;
+    font-family: var(--font-1);
+    font-weight: 100;
+    font-size: var(--tam-3);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container-como-funciona div div p {
+    width: 80%;
+    color: #ffffff50;
+    font-family: var(--font-1);
+    font-weight: 100;
+    font-size: var(--tam-1);
+}
+
+.div1-como-funciona {
+    background-image: url(../assets/imagens/como-funciona-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.div2-como-funciona {
+    background-image: url(../assets/imagens/como-funciona-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.div3-como-funciona {
+    background-image: url(../assets/imagens/como-funciona-3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.div4-como-funciona {
+    background-image: url(../assets/imagens/como-funciona-4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.div5-como-funciona {
+    background-image: url(../assets/imagens/como-funciona-5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.div6-como-funciona {
+    background-image: url(../assets/imagens/como-funciona-6.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 
 @media screen and (max-width: 800px) {
 
+    .como-funciona {
+        background-image: url(../assets/imagens/background-como-funciona.png);
+        background-repeat: no-repeat;
+        background-size: 120vh;
+        background-position-x: right;
+    }
 
     .titulo-como-funciona {
         display: flex;
         flex-direction: column;
         gap: 20px;
         align-items: center;
+    }
 
-        h2 {
-            color: #fff;
-            font-family: var(--font-1);
-            font-weight: 600;
-            font-size: var(--tam-5);
-        }
+    .titulo-como-funciona h2 {
+        color: #fff;
+        font-family: var(--font-1);
+        font-weight: 600;
+        font-size: var(--tam-5);
+    }
 
-        p {
-            width: 80%;
-            color: #fff;
-            font-family: var(--font-1);
-            font-weight: 200;
-            font-size: var(--tam-2);
-            text-align: justify;
-        }
+    .titulo-como-funciona p {
+        width: 80%;
+        color: #fff;
+        font-family: var(--font-1);
+        font-weight: 200;
+        font-size: var(--tam-2);
+        text-align: justify;
+    }
+
+    .container-como-funciona div {
+        padding: 20px;
     }
 
 
-    .container-como-funciona {
-        background-color: #010101;
-        div {
-
-            div {
-                width: 80%;
-                height: 150px;
-                background-image: none !important;
-
-
-                h4 {
-                    color: #ffffff80;
-                    font-family: var(--font-1);
-                    font-weight: 100;
-                    font-size: var(--tam-3);
-                    text-transform: uppercase;
-                    text-align: center;
-                }
-
-                p {
-                    width: 100%;
-                    color: #ffffff50;
-                    font-family: var(--font-1);
-                    font-weight: 100;
-                    font-size: var(--tam-1);
-                    text-align: justify;
-
-                }
-
-            }
-
-        }
+    .container-como-funciona div div {
+        background-image: none;
     }
 
+    .container-como-funciona div div h4 {
+        color: #ffffff80;
+        font-family: var(--font-1);
+        font-weight: 100;
+        font-size: var(--tam-3);
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .container-como-funciona div div p {
+        width: 100%;
+        color: #ffffff50;
+        font-family: var(--font-1);
+        font-weight: 100;
+        font-size: var(--tam-1);
+        text-align: justify;
+    }
 
 }
