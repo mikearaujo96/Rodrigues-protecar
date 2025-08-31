@@ -286,8 +286,6 @@
     bottom: -10px;
 }
 
-
-
 .selecione-ano-veiculo {
     width: 220px;
     position: relative;
@@ -347,8 +345,6 @@
     box-shadow: none;
     color: #ffffff83;
 }
-
-
 
 .selecione-cep-proprietario {
     width: 220px;
@@ -464,8 +460,6 @@
     z-index: 1;
 }
 
-
-
 @keyframes aparecer-texto {
     to {
         opacity: 1;
@@ -483,7 +477,6 @@
         opacity: 1;
     }
 }
-
 
 @keyframes gradientMove {
     0% {
@@ -603,7 +596,6 @@
 
 }
 
-
 @media screen and (max-width: 800px) {
 
     .header {
@@ -621,12 +613,14 @@
     }
 
     #bgVideo {
+        display: none;
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
     #bgFallback {
+        display: flex;
         width: 100%;
         height: 100%;
         object-fit: cover;
