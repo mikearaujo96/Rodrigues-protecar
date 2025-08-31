@@ -1,6 +1,7 @@
 const barra = document.querySelector('.carregamento-section-produtos span');
 const imgPrincipal = document.getElementById('minhaImagem-produto');
 const galeria = document.querySelectorAll('.galeria-produto img');
+const textos = document.querySelectorAll('.conteudo-section-produto .conteudo-texto div p');
 
 const imagens = [
     'assets/imagens/produto-angulo1.png',
@@ -21,8 +22,18 @@ function atualizarGaleria(indicePrincipal) {
     });
 }
 
+// Atualiza o scale do texto correspondente
+function atualizarTexto(indicePrincipal) {
+    textos.forEach((t, i) => {
+        t.style.transform = (i === indicePrincipal) ? 'scale(1.2)' : 'scale(1)';
+    });
+}
+
+// Inicializa o primeiro texto com scale
+atualizarTexto(indice);
+
 barra.addEventListener('animationiteration', () => {
-    // Aplica a classe de saída
+    // Aplica a classe de saída na imagem
     imgPrincipal.classList.add('sair');
 
     // Espera a transição de saída terminar
@@ -37,6 +48,9 @@ barra.addEventListener('animationiteration', () => {
 
         // Atualiza a galeria
         atualizarGaleria(indice);
+
+        // Atualiza o texto com scale
+        atualizarTexto(indice);
 
         // Remove a classe entrar após a animação
         setTimeout(() => {

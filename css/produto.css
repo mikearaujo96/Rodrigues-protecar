@@ -181,8 +181,9 @@
     justify-content: center;
     align-items: center;
 }
+
 .galeria-produto div:nth-child(1) {
-    transform: scale(1.2);    
+    transform: scale(1.2);
     background: #aa01015d;
 
 }
@@ -213,6 +214,7 @@
     0% {
         width: 0%;
     }
+
     100% {
         width: 100%;
     }
@@ -286,14 +288,16 @@
     .conteudo-section-produto .conteudo-texto div p {
         font-size: 10px;
         font-weight: 500;
-        color: #1C1C1C;
+        color: #ffffff;
         animation: esticar2 2s;
-        background-color: #fffffff1;
+        background-color: #fdfdfd24;
+        backdrop-filter: blur(100%);
         border-radius: 12px;
         padding: 10px 5px;
         text-align: center;
-
+        transition: transform 0.5s ease;
     }
+
 
     .conteudo-section-produto .conteudo-texto div .apontamento {
         display: none;
