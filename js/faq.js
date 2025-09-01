@@ -1,5 +1,5 @@
 // Seleciona todas as perguntas internas
-const perguntas = document.querySelectorAll('.perguntas-respostas-1 > .pergunta > .pergunta');
+const perguntas = document.querySelectorAll('.perguntas-respostas-1 > .perguntas > .pergunta');
 
 perguntas.forEach(pergunta => {
     pergunta.addEventListener('click', () => {
@@ -16,7 +16,7 @@ perguntas.forEach(pergunta => {
         } else {
             resposta.style.display = 'block';
             icone.classList.add('active'); // exemplo: adiciona classe que indica "aberto"
-            icone.style.transition = 'ease-in-out 0.5s'
+            icone.style.transition = 'ease-in-out 0.2s'
         }
     });
 });

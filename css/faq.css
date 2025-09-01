@@ -10,14 +10,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-    h2 {
-        font-family: var(--font-2);
-        color: #403939;
-        font-weight: bolder;
-        font-size: var(--tam-6);
-        text-align: center;
-    }
+.titulo-faq h2 {
+    font-family: var(--font-2);
+    color: #403939;
+    font-weight: bolder;
+    font-size: var(--tam-6);
+    text-align: center;
 }
 
 .container-perguntas {
@@ -28,154 +28,88 @@
     align-items: flex-start;
     gap: 20px;
     padding: 100px 0;
+}
 
+.container-perguntas .perguntas-respostas-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-left: 2px solid #AA0101;
+    width: 40%;
+    padding: 0 10px;
+}
 
-    .perguntas-respostas-1 {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        border-left: 2px solid #AA0101;
-        width: 40%;
-        padding: 0 10px;
+.container-perguntas .perguntas-respostas-1 .perguntas .pergunta {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 8px 0;
+    gap: 10px;
+}
 
-        .pergunta {
-            .pergunta {
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-start;
-                padding: 8px 0;
-                gap: 10px;
+.container-perguntas .perguntas-respostas-1 .perguntas .pergunta h4 {
+    font-family: var(--font-1);
+    color: #333131;
+    font-weight: 800;
+    font-size: var(--tam-3);
+    width: 80%;
+    text-align: justify;
+    cursor: pointer;
+}
 
-                h4 {
-                    font-family: var(--font-1);
-                    color: #333131;
-                    font-weight: 800;
-                    font-size: var(--tam-3);
-                    width: 80%;
-                    text-align: justify;
-                    cursor: pointer;
-                }
+.container-perguntas .perguntas-respostas-1 .perguntas .pergunta span {
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    transform: rotate(-90deg);
+}
 
-                span {
-                    cursor: pointer;
-                    display: flex;
-                    height: 100%;
-                    transform: rotate(-90deg);
-                }
+.container-perguntas .perguntas-respostas-1 .perguntas .pergunta span.active {
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    transform: rotate(0deg);
+}
 
-                span.active {
-                    cursor: pointer;
-                    display: flex;
-                    height: 100%;
-                    transform: rotate(0deg);
+.container-perguntas .perguntas-respostas-1 .perguntas .resposta {
+    display: none;
+}
 
-
-                }
-            }
-
-            .resposta {
-                display: none;
-
-                p {
-                    width: 80%;
-                    font-family: var(--font-1);
-                    color: #333131;
-                    font-weight: 100;
-                    font-size: var(--tam-2);
-                    text-align: justify;
-                    border-bottom: 1px solid #333131;
-                    padding: 10px;
-                }
-            }
-
-
-
-        }
-    }
-
+.container-perguntas .perguntas-respostas-1 .perguntas .resposta p {
+    width: 80%;
+    font-family: var(--font-1);
+    color: #333131;
+    font-weight: 100;
+    font-size: var(--tam-2);
+    text-align: justify;
+    border-bottom: 1px solid #333131;
+    padding: 10px;
 }
 
 @media screen and (max-width: 700px) {
-    .titulo-faq {
-
-        h2 {
-            font-size: var(--tam-4);
-        }
+    .titulo-faq h2 {
+        font-size: var(--tam-4);
     }
 
 
     .container-perguntas {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 20px;
-        padding: 100px 0;
         margin: auto;
-
-        .perguntas-respostas-1 {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            border-left: 2px solid #AA0101;
-            width: 100%;
-            padding: 0 10px;
-
-            .pergunta {
-                .pergunta {
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: flex-start;
-                    padding: 8px 0;
-                    gap: 10px;
-
-                    h4 {
-                        font-family: var(--font-1);
-                        color: #333131;
-                        font-weight: 800;
-                        font-size: var(--tam-3);
-                        width: 80%;
-                        text-align: justify;
-                        cursor: pointer;
-                    }
-
-                    span {
-                        cursor: pointer;
-                        display: flex;
-                        height: 100%;
-                        transform: rotate(-90deg);
-                    }
-
-                    span.active {
-                        cursor: pointer;
-                        display: flex;
-                        height: 100%;
-                        transform: rotate(0deg);
-
-
-                    }
-                }
-
-                .resposta {
-                    display: none;
-
-                    p {
-                        width: 100%;
-                        font-family: var(--font-1);
-                        color: #333131;
-                        font-weight: 100;
-                        font-size: var(--tam-2);
-                        text-align: justify;
-                        border-bottom: 1px solid #333131;
-                        padding: 10px 20px;
-                    }
-                }
-
-
-
-            }
-        }
-
     }
+
+
+    .container-perguntas .perguntas-respostas-1 {
+        width: 100%;
+    }
+
+    .container-perguntas .perguntas-respostas-1 .perguntas .pergunta {
+        justify-content: space-around;
+    }
+
+    .container-perguntas .perguntas-respostas-1 .perguntas .resposta p {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
 }

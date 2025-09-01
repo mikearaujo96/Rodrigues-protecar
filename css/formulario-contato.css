@@ -6,82 +6,80 @@
     flex-direction: column;
     align-items: center;
 
-    .listras-contato {
-        width: 100%;
+}
 
-        .faixa-bottom {
-            bottom: 0;
-            width: 100%;
-            height: 56px;
-            background-color: #fff;
-            position: relative;
+.container-titulo-contato .listras-contato {
+    width: 100%;
+}
 
-            span {
-                position: absolute;
-                left: 0;
-                display: flex;
-                height: 100%;
-                clip-path: polygon(0% 0%,
-                        90% 0%,
-                        100% 100%,
-                        0% 100%);
-            }
+.container-titulo-contato .listras-contato .faixa-bottom {
+    bottom: 0;
+    width: 100%;
+    height: 56px;
+    background-color: #fff;
+    position: relative;
+}
 
-            .faixa-1 {
-                width: 65%;
-                background: #1C1C1C;
-            }
+.container-titulo-contato .listras-contato .faixa-bottom span {
+    position: absolute;
+    left: 0;
+    display: flex;
+    height: 100%;
+    clip-path: polygon(0% 0%,
+            90% 0%,
+            100% 100%,
+            0% 100%);
+}
 
-            .faixa-2 {
-                width: calc(65% - 14px);
-                background: #fff;
-            }
+.container-titulo-contato .listras-contato .faixa-bottom .faixa-1 {
+    width: 65%;
+    background: #1C1C1C;
+}
 
-            .faixa-3 {
-                width: calc(65% - (14px*2));
-                background: #1C1C1C;
-            }
+.container-titulo-contato .listras-contato .faixa-bottom .faixa-2 {
+    width: calc(65% - 14px);
+    background: #fff;
+}
 
-            .faixa-4 {
-                width: calc(65% - (14px*3));
-                background: #fff;
-            }
-        }
+.container-titulo-contato .listras-contato .faixa-bottom .faixa-3 {
+    width: calc(65% - (14px*2));
+    background: #1C1C1C;
+}
 
-    }
+.container-titulo-contato .listras-contato .faixa-bottom .faixa-4 {
+    width: calc(65% - (14px*3));
+    background: #fff;
+}
 
-    h3 {
-        padding-top: 75px;
-        font-family: var(--font-1);
-        color: #fff;
-        font-weight: 800;
-        font-size: var(--tam-6);
-        text-align: center;
-    }
+.container-titulo-contato h3 {
+    padding-top: 75px;
+    font-family: var(--font-1);
+    color: #fff;
+    font-weight: 800;
+    font-size: var(--tam-6);
+    text-align: center;
+}
 
-    p {
-        padding: 25px 0;
-        font-family: var(--font-1);
-        color: #fff;
-        font-weight: 400;
-        font-size: var(--tam-3);
-        text-align: center;
+.container-titulo-contato p {
+    padding: 25px 0;
+    font-family: var(--font-1);
+    color: #fff;
+    font-weight: 400;
+    font-size: var(--tam-3);
+    text-align: center;
+}
 
-    }
-
-    a {
-        background-color: #fff;
-        padding: 10px;
-        font-family: var(--font-1);
-        color: #1C1C1C;
-        font-weight: 800;
-        font-size: var(--tam-3);
-        text-decoration: none;
-        border: 5px #1C1C1C;
-        border-style: double;
-        text-align: center;
-
-    }
+.container-titulo-contato a {
+    background-color: #fff;
+    padding: 10px;
+    font-family: var(--font-1);
+    color: #1C1C1C;
+    font-weight: 800;
+    font-size: var(--tam-3);
+    text-decoration: none;
+    border: 5px #1C1C1C;
+    border-style: double;
+    text-align: center;
 
 }
 
@@ -93,258 +91,246 @@
     flex-wrap: wrap;
     padding: 100px 0;
     gap: 50px;
+}
 
-    .inputs {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+.container-conteudo-contato .inputs {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 
-        h3 {
-            font-family: var(--font-1);
-            color: #fff;
-            font-size: var(--tam-5);
-            text-align: center;
-        }
+.container-conteudo-contato .inputs h3 {
+    font-family: var(--font-1);
+    color: #fff;
+    font-size: var(--tam-5);
+    text-align: center;
+}
 
 
-        .input-nome {
-            input {
-                width: 100%;
-                height: 70px;
-                border: none;
-                border-bottom: 1px solid #fff;
-                background-color: transparent;
-                color: #fff;
-                font-family: var(--font-1);
-                font-size: var(--tam-2);
-                padding: 10px;
-            }
+.formulario-contato .input-nome input {
+    width: 100%;
+    height: 70px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-family: var(--font-1);
+    font-size: var(--tam-2);
+    padding: 10px;
 
-            input::placeholder {
-                color: #757171;
-            }
+}
 
-        }
+.formulario-contato .input-nome input::placeholder {
+    color: #757171;
+}
 
-        .input-tel-email {
-            display: flex;
-            justify-content: space-between;
+.formulario-contato .input-tel-email {
+    display: flex;
+    justify-content: space-between;
+}
 
-            input {
-                width: 48%;
-                height: 70px;
-                border: none;
-                border-bottom: 1px solid #fff;
-                background-color: transparent;
-                color: #fff;
-                font-family: var(--font-1);
-                font-size: var(--tam-2);
-                padding: 10px;
-            }
+.formulario-contato .input-tel-email input {
+    width: 48%;
+    height: 70px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-family: var(--font-1);
+    font-size: var(--tam-2);
+    padding: 10px;
+}
 
-            input::placeholder {
-                color: #757171;
-            }
-        }
+.formulario-contato .input-tel-email input::placeholder {
+    color: #757171;
+}
 
-        .input-mensagem {
-            width: 100%;
-            height: 150px;
-            border-bottom: 1px solid #fff;
-            position: relative;
+.formulario-contato .input-mensagem {
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
 
-            textarea {
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                font-family: var(--font-1);
-                font-size: var(--tam-2);
-                color: #fff;
-                outline: none;
-                resize: none;
-                background-color: transparent;
-                border: none;
-                padding: 10px;
-            }
+.formulario-contato .input-mensagem textarea {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: var(--font-1);
+    font-size: var(--tam-2);
+    color: #fff;
+    outline: none;
+    resize: none;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
 
-            textarea::placeholder {
-                font-family: var(--font-1);
-                font-size: var(--tam-2);
-                color: #757171;
-            }
-        }
+.formulario-contato .input-mensagem textarea::placeholder {
+    font-family: var(--font-1);
+    font-size: var(--tam-2);
+    color: #757171;
+}
 
-        .input-enviar {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding-top: 20px;
+.formulario-contato .input-enviar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
 
-            .bt-enviar {
-                background-color: #AA0101;
-                padding: 10px;
-                font-family: var(--font-1);
-                color: #fff;
-                font-weight: 800;
-                font-size: var(--tam-3);
-                text-decoration: none;
-                border: 5px #fff;
-                border-style: double;
-                border-radius: 10px;
-                cursor: pointer;
-            }
-        }
-    }
+.formulario-contato .input-enviar .bt-enviar {
+    background-color: #AA0101;
+    padding: 10px;
+    font-family: var(--font-1);
+    color: #fff;
+    font-weight: 800;
+    font-size: var(--tam-3);
+    text-decoration: none;
+    border: 5px #fff;
+    border-style: double;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
-    .divisoria {
-        display: flex;
-        flex-direction: row;
-        width: 2px;
-        height: 350px;
-        background-color: #fff;
-    }
+.container-conteudo-contato .divisoria {
+    display: flex;
+    flex-direction: row;
+    width: 2px;
+    height: 350px;
+    background-color: #fff;
+}
 
-    .contatos {
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+.container-conteudo-contato .contatos {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 
-        h2 {
-            font-family: var(--font-1);
-            color: #fff;
-            font-weight: 800;
-            font-size: var(--tam-4);
-        }
+.container-conteudo-contato .contatos h2 {
+    font-family: var(--font-1);
+    color: #fff;
+    font-weight: 800;
+    font-size: var(--tam-4);
+}
 
-        .telefones {
-            span {
-                display: flex;
-                flex-direction: column;
+.container-conteudo-contato .contatos .telefones span {
+    display: flex;
+    flex-direction: column;
+}
 
-                p {
-                    padding-top: 20px;
-                    font-family: var(--font-1);
-                    color: #ffffffa2;
-                    font-weight: 100;
-                    font-size: var(--tam-1);
-                }
+.container-conteudo-contato .contatos .telefones span p {
+    padding-top: 20px;
+    font-family: var(--font-1);
+    color: #ffffffa2;
+    font-weight: 100;
+    font-size: var(--tam-1);
+}
 
-                h4 {
-                    font-family: var(--font-1);
-                    color: #ffffff;
-                    font-weight: 800;
-                    font-size: var(--tam-6);
-                    padding: 10px 0;
-                }
+.container-conteudo-contato .contatos .telefones span h4 {
+    font-family: var(--font-1);
+    color: #ffffff;
+    font-weight: 800;
+    font-size: var(--tam-6);
+    padding: 10px 0;
+}
 
-                a {
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    font-family: var(--font-1);
-                    color: #ffffff;
-                    font-weight: 800;
-                    font-size: var(--tam-4);
-                    text-decoration: none;
-                }
-            }
-        }
+.container-conteudo-contato .contatos .telefones span a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-1);
+    color: #ffffff;
+    font-weight: 800;
+    font-size: var(--tam-4);
+    text-decoration: none;
+}
 
-        .emails {
-            padding-top: 20px;
+.container-conteudo-contato .contatos .emails {
+    padding-top: 20px;
+}
 
-            p {
-                font-family: var(--font-1);
-                color: #ffffffa2;
-                font-weight: 100;
-                font-size: var(--tam-1);
-            }
+.container-conteudo-contato .contatos .emails p {
+    font-family: var(--font-1);
+    color: #ffffffa2;
+    font-weight: 100;
+    font-size: var(--tam-1);
+}
 
-            p:nth-child(2) {
-                color: #fff;
-            }
-        }
+.container-conteudo-contato .contatos .emails p:nth-child(2) {
+    color: #fff;
+}
 
-        .endereco {
-            padding-top: 20px;
 
-            p {
-                font-family: var(--font-1);
-                color: #ffffffa2;
-                font-weight: 100;
-                font-size: var(--tam-1);
-            }
+.container-conteudo-contato .contatos .endereco {
+    padding-top: 20px;
+}
 
-            p:nth-child(2) {
-                color: #fff;
-            }
+.container-conteudo-contato .contatos .endereco p {
+    font-family: var(--font-1);
+    color: #ffffffa2;
+    font-weight: 100;
+    font-size: var(--tam-1);
+}
 
-        }
+.container-conteudo-contato .contatos .endereco p:nth-child(2) {
+    color: #fff;
+}
 
-        .hr-atendimento {
-            padding-top: 20px;
+.container-conteudo-contato .contatos .hr-atendimento {
+    padding-top: 20px;
+}
 
-            p {
-                font-family: var(--font-1);
-                color: #ffffffa2;
-                font-weight: 100;
-                font-size: var(--tam-1);
-            }
+.container-conteudo-contato .contatos .hr-atendimento p {
+    font-family: var(--font-1);
+    color: #ffffffa2;
+    font-weight: 100;
+    font-size: var(--tam-1);
+}
 
-            p:nth-child(2) {
-                color: #fff;
-            }
+.container-conteudo-contato .contatos .hr-atendimento p:nth-child(2) {
+    color: #fff;
+}
 
-            p:nth-child(3) {
-                color: #fff;
-            }
+.container-conteudo-contato .contatos .hr-atendimento p:nth-child(3) {
+    color: #fff;
+}
 
-        }
+.container-conteudo-contato .contatos .redes-sociais {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
-        .redes-sociais {
-            padding-top: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
+.container-conteudo-contato .contatos .redes-sociais a {
+    text-decoration: none;
+}
 
-            a {
-                text-decoration: none;
-
-                img {
-                    height: 30px;
-                    width: 30px;
-                }
-
-            }
-
-        }
-    }
+.container-conteudo-contato .contatos .redes-sociais a img {
+    height: 30px;
+    width: 30px;
 }
 
 
 @media screen and (max-width: 800px) {
 
+    .container-conteudo-contato .inputs {
+        width: 95%;
+    }
 
-    .container-conteudo-contato {
+    .container-conteudo-contato .divisoria {
+        display: flex;
+        height: 2px;
+        width: 90%;
+        background-color: #ffffff3c;
+    }
 
-        .inputs {
-            width: 95%;
-
-        }
-
-        .divisoria {
-            display: flex;
-            height: 2px;
-            width: 90%;
-            background-color: #ffffff3c;
-        }
-
-        .contatos {
-            width: 95%;
-            padding: 0 10px;
-        }
+    .container-conteudo-contato .contatos {
+        width: 95%;
+        padding: 0 10px;
     }
 }

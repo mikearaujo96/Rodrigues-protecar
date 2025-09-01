@@ -26,13 +26,12 @@
     <!-- CSS e JS -->
     <link rel="stylesheet" href="css/index.css">
     <script src="js/transicaoNav.js" defer></script>
+    <script src="js/animation-titulo.js" defer></script>
     <script src="js/verificacaoDisponibilidade.js" defer></script>
-    <script src="js/sectionProdutos.js" defer></script>
-    <script src="js/faq.js" defer></script>
     <script src="js/produto.js" defer></script>
     <script src="js/precos.js" defer></script>
     <script src="js/videosFundo.js" defer></script>
-    <script src="js/blog-interation.js" defer></script>
+    <script src="js/faq.js" defer></script>
     <title>Rodrigues Trava Protecar</title>
 
 </head>
@@ -553,7 +552,7 @@
 
                 <div class="perguntas-respostas-1">
 
-                    <div class="pergunta">
+                    <div class="perguntas">
                         <div class="pergunta">
                             <h4>O que é a Protecar Veicular?</h4>
                             <span class="icon-pergunta"><img src="assets/icones/icone-seta-faq.svg"
@@ -569,7 +568,7 @@
 
                     </div>
 
-                    <div class="pergunta">
+                    <div class="perguntas">
                         <div class="pergunta">
                             <h4>Precisa modificar o carro para instalar?</h4>
                             <span class="icon-pergunta true"><img src="assets/icones/icone-seta-faq.svg"
@@ -584,7 +583,7 @@
 
                     </div>
 
-                    <div class="pergunta">
+                    <div class="perguntas">
                         <div class="pergunta">
                             <h4>Quanto tempo leva para instalar?</h4>
                             <span class="icon-pergunta true"><img src="assets/icones/icone-seta-faq.svg"
@@ -600,7 +599,7 @@
 
                     </div>
 
-                    <div class="pergunta">
+                    <div class="perguntas">
                         <div class="pergunta">
                             <h4>É melhor do que um alarme convencional?</h4>
                             <span class="icon-pergunta true"><img src="assets/icones/icone-seta-faq.svg"
@@ -617,7 +616,7 @@
 
                     </div>
 
-                    <div class="pergunta">
+                    <div class="perguntas">
                         <div class="pergunta">
                             <h4>Posso transferir a trava Protécar de um veículo para outro?</h4>
                             <span class="icon-pergunta true"><img src="assets/icones/icone-seta-faq.svg"
@@ -638,7 +637,8 @@
                 </div>
 
                 <div class="perguntas-respostas-1">
-                    <div class="pergunta">
+
+                    <div class="perguntas">
                         <div class="pergunta">
                             <h4>Funciona mesmo para veículos com seguro?</h4>
                             <span class="icon-pergunta"><img src="assets/icones/icone-seta-faq.svg"
@@ -654,7 +654,7 @@
 
                     </div>
 
-                    <div class="pergunta">
+                    <div class="perguntas">
                         <div class="pergunta">
                             <h4>O sistema pode falhar ou travar o carro sem motivo?</h4>
                             <span class="icon-pergunta"><img src="assets/icones/icone-seta-faq.svg"
@@ -670,7 +670,7 @@
 
                     </div>
 
-                    <div class="pergunta">
+                    <div class="perguntas">
                         <div class="pergunta">
                             <h4>Qual é a garantia do produto?</h4>
                             <span class="icon-pergunta"><img src="assets/icones/icone-seta-faq.svg"
@@ -685,7 +685,7 @@
 
                     </div>
 
-                    <div class="pergunta">
+                    <div class="perguntas">
                         <div class="pergunta">
                             <h4>Onde vocês atendem?</h4>
                             <span class="icon-pergunta"><img src="assets/icones/icone-seta-faq.svg"
@@ -709,7 +709,7 @@
 
         </section>
 
-        <section id="sessao-contato" class="formulario-contato">
+        <section id="sessao-contato">
             <div class="container-titulo-contato">
                 <div class="listras-contato">
                     <div class="faixa-bottom">
@@ -729,17 +729,21 @@
             <div class="container-conteudo-contato">
                 <div class="inputs">
                     <h3>Envie suas dúvidas</h3>
-                    <form action="">
+                    <form action="" class="formulario-contato">
+
                         <div class="input-nome">
                             <input type="text" name="Nome" id="" placeholder="Nome" autocomplete="no">
                         </div>
+
                         <div class="input-tel-email">
                             <input type="tel" name="telefone" id="" placeholder="Telefone" autocomplete="new-tel">
                             <input type="email" name="email" id="" placeholder="E-mail" autocomplete="off">
                         </div>
+
                         <div class="input-mensagem">
                             <textarea name="mensagem" id="" placeholder="Mensagem"></textarea>
                         </div>
+
                         <div class="input-enviar">
                             <input class="bt-enviar" type="submit" value="ENVIAR MENSAGEM">
                         </div>
@@ -749,7 +753,9 @@
                 <span class="divisoria"></span>
 
                 <div class="contatos">
+
                     <h2>CONTATOS</h2>
+
                     <div class="telefones">
                         <span>
                             <p>Telefone</p>
@@ -768,19 +774,23 @@
                             </a>
                         </span>
                     </div>
+
                     <div class="emails">
                         <p>E-mail</p>
                         <p>contato@rodriguestravaprotecar.com.br</p>
                     </div>
+
                     <div class="endereco">
                         <p>Endereço</p>
                         <p>Rua Renzo Baldini, 754 - Parada XV de Novembro - São Paulo, SP CEP 08248-000</p>
                     </div>
+
                     <div class="hr-atendimento">
                         <p>Horario de atendimento</p>
                         <p>Segunda-feira - Sexta-feira: 08:00 às 18:00</p>
                         <p>Sabado: 08:00 às 14:00</p>
                     </div>
+
                     <div class="redes-sociais">
                         <a href=""><img src="assets/icones/icone-footer-WhatsApp.svg" alt=""></a>
                         <a href=""><img src="assets/icones/icone-footer-Instagram.svg" alt=""></a>
@@ -834,57 +844,8 @@
         </section>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const root = document.getElementById("vento");
-            const originalNodes = Array.from(root.childNodes);
-            root.innerHTML = "";
 
-            let letterIndex = 0;
-            const delayStep = 0.08; // tempo entre letras (em segundos)
 
-            function splitNodeToSpans(node, target) {
-                if (node.nodeType === Node.TEXT_NODE) {
-                    const text = node.nodeValue;
-                    for (const ch of text) {
-                        const span = document.createElement("span");
-                        span.className = "char";
-                        span.textContent = (ch === " ") ? "\u00A0" : ch; // preserva espaço
-                        span.style.animationDelay = `${letterIndex * delayStep}s`;
-                        target.appendChild(span);
-                        letterIndex++;
-                    }
-                } else if (node.nodeName === "BR") {
-                    target.appendChild(document.createElement("br")); // preserva <br>
-                } else if (node.nodeType === Node.ELEMENT_NODE) {
-                    const el = document.createElement(node.nodeName.toLowerCase());
-                    for (const attr of node.attributes || []) {
-                        el.setAttribute(attr.name, attr.value);
-                    }
-                    target.appendChild(el);
-                    Array.from(node.childNodes).forEach(child => splitNodeToSpans(child, el));
-                }
-            }
-
-            originalNodes.forEach(n => splitNodeToSpans(n, root));
-        });
-
-    </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var video = document.getElementById("bgVideo");
-            var fallback = document.getElementById("bgFallback");
-
-            // Teste simples de autoplay
-            video.play().catch(function () {
-                // Se autoplay falhar, esconde o video e mostra a imagem
-                video.style.display = "none";
-                fallback.style.display = "block";
-            });
-        });
-
-    </script>
 
 </body>
 
