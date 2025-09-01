@@ -220,8 +220,14 @@
     display: flex;
     flex-direction: column;
 }
+.container-conteudo-contato .contatos .telefones .contato-fixo a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+}
 
-.container-conteudo-contato .contatos .telefones span p {
+.container-conteudo-contato .contatos .telefones span a p {
     padding-top: 20px;
     font-family: var(--font-1);
     color: #ffffffa2;
@@ -229,7 +235,7 @@
     font-size: var(--tam-1);
 }
 
-.container-conteudo-contato .contatos .telefones span h4 {
+.container-conteudo-contato .contatos .telefones span a h4 {
     font-family: var(--font-1);
     color: #ffffff;
     font-weight: 800;
@@ -251,8 +257,11 @@
 .container-conteudo-contato .contatos .emails {
     padding-top: 20px;
 }
+.container-conteudo-contato .contatos .emails a {
+    text-decoration: none;
+}
 
-.container-conteudo-contato .contatos .emails p {
+.container-conteudo-contato .contatos .emails a p {
     font-family: var(--font-1);
     color: #ffffffa2;
     font-weight: 100;
