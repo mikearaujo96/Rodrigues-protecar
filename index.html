@@ -28,6 +28,8 @@
     <script src="js/transicaoNav.js" defer></script>
     <script src="js/animation-titulo.js" defer></script>
     <script src="js/verificacaoDisponibilidade.js" defer></script>
+    <script src="js/envio-busca-regiao.js" defer></script>
+    <script src="js/animation-popup.js" defer></script>
     <script src="js/produto.js" defer></script>
     <script src="js/precos.js" defer></script>
     <script src="js/videosFundo.js" defer></script>
@@ -133,13 +135,13 @@
                 <div class="selecione-tipo-veiculo">
                     <label for="">Tipo do veículo</label>
 
-                    <div id="abrir-tipo-veiculos" class="input">
+                    <div id="btn1" class="input">
                         <img src="assets/icones/icon-carro.svg" alt="icone: carro">
                         <input type="text" id="input-veri-1" placeholder="Tipo de veiculo" value="" readonly>
                         <img src="assets/icones/icon-seta2.svg" alt="icone: seta">
                     </div>
 
-                    <div class="opcoes-tipo-veiculo">
+                    <div id="popup1" class="opcoes-tipo-veiculo">
                         <ul>
                             <li>Carro</li>
                             <li>Utilitario</li>
@@ -150,12 +152,12 @@
 
                 <div class="selecione-ano-veiculo">
                     <label for="">Ano do veículo</label>
-                    <div id="abrir-ano-veiculos" class="input">
+                    <div id="btn2" class="input">
                         <img src="assets/icones/icone-calendario.svg" alt="icone: calendario">
                         <input type="number" id="input-veri-2" name="ano" min="2000" max="2025"
                             placeholder="Ex.: 2020"><img src="assets/icones/icon-seta2.svg" alt="icone: seta">
                     </div>
-                    <div class="opcoes-ano-veiculo">
+                    <div id="popup2" class="opcoes-ano-veiculo">
                         <ul id="lista-de-anos-veiculos">
                         </ul>
                     </div>
@@ -166,7 +168,8 @@
                     <label for="">CEP</label>
                     <div class="input">
                         <img src="assets/icones/icone-cep.svg" alt="icone: cep">
-                        <input id="meuCep" data-mask="cep" placeholder="00000-000" inputmode="numeric" maxlength="9" />
+                        <input type="text" id="meuCep" data-mask="cep" placeholder="00000-000" inputmode="numeric"
+                            maxlength="9" autocomplete="off" />
                     </div>
                 </div>
 
@@ -179,21 +182,37 @@
             </div>
 
             <div class="resultado-pesquisa true">
-                <div class="atendimento">
-                    <h2><span class="disponibilidade-de-agendamento"></span>Ótima notícia!🎉</h2>
-                    <h4>Atendemos a sua região! Clique no botão ao lado para agendar seu horário rapidinho!</h4>
+                <span onclick="fecharPopupAgendaTrue()" class="fecharPopup-agendamento">
+                    <img src="assets/icones/icone-close.svg" alt="fechar popup">
+                </span>
+
+                <div class="resultado">
+                    <div class="atendimento">
+                        <h2>Ótima notícia!🎉</h2>
+                        <h4>Atendemos a sua região! Clique no botão ao lado para agendar seu horário rapidinho!</h4>
+                    </div>
+                    <div class="bt-agendamento">
+                        <a href="">Agendar horario</a>
+                    </div>
+
                 </div>
-                <div class="bt-agendamento">
-                    <a href="">Agendar horario</a>
-                </div>
+
             </div>
 
             <div class="resultado-pesquisa false">
-                <div class="atendimento">
-                    <h2><span class="disponibilidade-de-agendamento"></span>Infelizmente ainda não atendemos sua região
-                        😢</h2>
-                    <h4>mas fique de olho, em breve podemos estar pertinho de você!</h4>
+                <span onclick="fecharPopupAgendaFalse()"  class="fecharPopup-agendamento">
+                    <img src="assets/icones/icone-close.svg" alt="fechar popup">
+                </span>
+
+                <div class="resultado">
+                    <div class="atendimento">
+                        <h2>
+                            Infelizmente ainda não atendemos sua região 😢
+                        </h2>
+                        <h4>mas fique de olho, em breve podemos estar pertinho de você!</h4>
+                    </div>
                 </div>
+
             </div>
 
         </section>
