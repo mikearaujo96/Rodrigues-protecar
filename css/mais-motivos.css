@@ -233,6 +233,19 @@
 
 
 @media screen and (max-width: 800px) {
+
+    .mais-motivos .titulo h2{
+        padding: 0 10px 0 0;
+        width: 70%;
+        text-align: end;
+    }
+    .mais-motivos .titulo p{
+        padding: 0 10px;
+        width: 100%;
+        text-align: center;
+        font-size: var(--tam-3);
+    }
+
     .conteudo-mais-motivos {
         width: 100%;
         justify-content: center;
@@ -242,6 +255,8 @@
     .conteudo-mais-motivos .lista-motivos .conteudo-motivos {
         height: 120px;
         min-width: 60vw;
+        border: 1px solid #fff;
+        backdrop-filter: blur(5px);
 
     }
 
