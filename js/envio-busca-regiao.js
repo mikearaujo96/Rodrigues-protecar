@@ -48,14 +48,17 @@ btnVerificar.addEventListener('click', () => {
             }
 
             // Armazenando dados
-            const enderecoArray = {
+            const agendamento = {
+                TipoVeiculo: tipo,       // << adiciona aqui
+                AnoVeiculo: ano,          // << adiciona aqui
                 Cep: data.cep,
                 Rua: data.logradouro,
                 Bairro: data.bairro,
                 Cidade: data.localidade,
                 UF: data.uf
             };
-            localStorage.setItem('endereco', JSON.stringify(enderecoArray));
+            localStorage.setItem('agendamento', JSON.stringify(agendamento));
+
 
             // Mostrar resultado
             if (data.localidade === "São Paulo") {

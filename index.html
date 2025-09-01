@@ -33,7 +33,8 @@
     <script src="js/produto.js" defer></script>
     <script src="js/precos.js" defer></script>
     <script src="js/videosFundo.js" defer></script>
-    <script src="js/faq.js" defer></script>
+    <script src="js/validation-formulario.js" defer></script>
+    <script src="js/agendamento.js" defer></script>
     <title>Rodrigues Trava Protecar</title>
 
 </head>
@@ -117,7 +118,7 @@
                     <h3>Instale a trava protecar e durma tranquilo. <br>Segurança reforçada, instalação rápida e
                         máxima
                         confiança.</h3>
-                    <a href="#">AGENDAR INSTALAÇÃO</a>
+                    <a href="https://wa.me/5511987812686?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20instalação">AGENDAR INSTALAÇÃO</a>
                 </div>
 
 
@@ -125,7 +126,7 @@
 
         </section>
 
-        <section class="busca-por-servicos">
+        <section id="buscar-regiao" class="busca-por-servicos">
             <div class="titulo-busca-por-servicos">
                 <h3>Verifique a disponibilidade dos nossos serviços na sua região</h3>
             </div>
@@ -192,7 +193,7 @@
                         <h4>Atendemos a sua região! Clique no botão ao lado para agendar seu horário rapidinho!</h4>
                     </div>
                     <div class="bt-agendamento">
-                        <a href="">Agendar horario</a>
+                        <a href="#" id="agendamento-marcado">Agendar horario</a>
                     </div>
 
                 </div>
@@ -200,7 +201,7 @@
             </div>
 
             <div class="resultado-pesquisa false">
-                <span onclick="fecharPopupAgendaFalse()"  class="fecharPopup-agendamento">
+                <span onclick="fecharPopupAgendaFalse()" class="fecharPopup-agendamento">
                     <img src="assets/icones/icone-close.svg" alt="fechar popup">
                 </span>
 
@@ -543,20 +544,38 @@
                 <div class="container-posts">
                     <div class="scroll-posts">
                         <div>
-                            <img class="filho" src="assets/imagens/post1.png" alt="">
+                            <iframe width="100%" height="100%"
+                                src="https://www.youtube.com/embed/6mrP3VuVwfI?si=867OY53lnQRReA31"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <!-- <img class="filho" src="assets/imagens/post1.png" alt=""> -->
                         </div>
                         <div>
-                            <img src="assets/imagens/post2.png" alt="">
+                            <iframe width="100%" height="100%"
+                                src="https://www.youtube.com/embed/i2lIWwETg5g?si=njBi2LZLLOpzNYNm"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <!-- <img src="assets/imagens/post2.png" alt=""> -->
                         </div>
                         <div>
-                            <img src="assets/imagens/post3.png" alt="">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/gMWfRm9Vq5c?si=cnp3Dw6pkOmUlvTC"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <!-- <img src="assets/imagens/post3.png" alt=""> -->
                         </div>
                         <div>
-                            <img class="filho" src="assets/imagens/post2.png" alt="">
+                            <iframe width="100%" height="100%"
+                                src="https://www.youtube.com/embed/QP_yOOSqk48?si=wyRipaJw6N2ehfE-"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <!-- <img class="filho" src="assets/imagens/post2.png" alt=""> -->
                         </div>
-                        <div>
-                            <img src="assets/imagens/post1.png" alt="">
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -748,23 +767,33 @@
             <div class="container-conteudo-contato">
                 <div class="inputs">
                     <h3>Envie suas dúvidas</h3>
-                    <form action="" class="formulario-contato">
+                    <form action="https://formsubmit.co/contato.mikearaujo@gmail.com" method="POST"
+                        class="formulario-contato">
+
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                        <input type="hidden" name="_subject" value="Novo cliente através do Site!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_autoresponse"
+                            value="Olá aqui é da Rodrigues Trava Protecar: recebemos seu e-mail de contato e logo responderemos">
 
                         <div class="input-nome">
-                            <input type="text" name="Nome" id="" placeholder="Nome" autocomplete="no">
+                            <input type="text" name="Nome" id="input-nome-formulario" placeholder="Nome"
+                                autocomplete="no">
                         </div>
 
                         <div class="input-tel-email">
-                            <input type="tel" name="telefone" id="" placeholder="Telefone" autocomplete="new-tel">
-                            <input type="email" name="email" id="" placeholder="E-mail" autocomplete="off">
+                            <input type="tel" name="telefone" id="input-telefone-formulario" placeholder="Telefone"
+                                autocomplete="new-tel">
+                            <input type="email" name="email" id="input-email-formulario" placeholder="E-mail"
+                                autocomplete="off">
                         </div>
 
                         <div class="input-mensagem">
-                            <textarea name="mensagem" id="" placeholder="Mensagem"></textarea>
+                            <textarea name="mensagem" id="input-mensagem-formulario" placeholder="Mensagem"></textarea>
                         </div>
 
                         <div class="input-enviar">
-                            <input class="bt-enviar" type="submit" value="ENVIAR MENSAGEM">
+                            <input class="bt-enviar" type="submit" id="input-enviar-formulario" value="ENVIAR MENSAGEM">
                         </div>
                     </form>
                 </div>
